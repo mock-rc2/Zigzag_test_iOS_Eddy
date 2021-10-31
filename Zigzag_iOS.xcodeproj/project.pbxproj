@@ -33,6 +33,7 @@
 		2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */; };
 		2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */; };
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
+		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		3A789052206AC0D2D597D7EF /* Pods_Zigzag_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DF9BDD59DAA9A7D6DBCF7F /* Pods_Zigzag_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		798F786437ABFACA095EDE99 /* Pods-Zigzag_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zigzag_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Zigzag_iOS/Pods-Zigzag_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8E8685759B03F92B1C29B97D /* Pods-Zigzag_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zigzag_iOS.release.xcconfig"; path = "Target Support Files/Pods-Zigzag_iOS/Pods-Zigzag_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C5DF9BDD59DAA9A7D6DBCF7F /* Pods_Zigzag_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zigzag_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +226,7 @@
 			children = (
 				2D4C9EA9272D7FD30069BB3B /* MyPageStoryboard.storyboard */,
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
+				2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
 				2D4C9E50272D18520069BB3B /* ViewController.swift in Sources */,
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
+				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,
