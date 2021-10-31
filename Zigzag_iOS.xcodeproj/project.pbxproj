@@ -34,6 +34,8 @@
 		2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */; };
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
+		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
+		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
 		3A789052206AC0D2D597D7EF /* Pods_Zigzag_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DF9BDD59DAA9A7D6DBCF7F /* Pods_Zigzag_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		798F786437ABFACA095EDE99 /* Pods-Zigzag_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zigzag_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Zigzag_iOS/Pods-Zigzag_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8E8685759B03F92B1C29B97D /* Pods-Zigzag_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zigzag_iOS.release.xcconfig"; path = "Target Support Files/Pods-Zigzag_iOS/Pods-Zigzag_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C5DF9BDD59DAA9A7D6DBCF7F /* Pods_Zigzag_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zigzag_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,7 @@
 				2D4C9E78272D41F80069BB3B /* UIButton.swift */,
 				2D4C9E7B272D420E0069BB3B /* UIViewController.swift */,
 				2D4C9E7E272D421D0069BB3B /* UINavigationBar.swift */,
+				2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -224,11 +229,20 @@
 		2D4C9E95272D5E510069BB3B /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				2DFD1EFC272EDFBC00E6EDD4 /* Auth */,
 				2D4C9EA9272D7FD30069BB3B /* MyPageStoryboard.storyboard */,
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
-				2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		2DFD1EFC272EDFBC00E6EDD4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */,
+				2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		6FD335CC5DD3CC3C7FBFD7B1 /* Frameworks */ = {
@@ -369,9 +383,11 @@
 			files = (
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
+				2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */,
 				2D4C9E50272D18520069BB3B /* ViewController.swift in Sources */,
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
+				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,

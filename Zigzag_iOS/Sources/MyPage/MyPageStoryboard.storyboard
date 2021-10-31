@@ -116,7 +116,7 @@
                                     <constraint firstAttribute="height" constant="45" id="uU3-LE-ke5"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="TapEmailLoginButton:" destination="3Jn-eh-X1x" eventType="touchUpInside" id="V31-Md-lgH"/>
+                                    <segue destination="XA9-nX-KBo" kind="show" id="zFo-PS-JH7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-zh-kGW">
@@ -161,11 +161,11 @@
                             <constraint firstItem="SIH-X0-bCu" firstAttribute="leading" secondItem="w0n-eg-X43" secondAttribute="leading" constant="20" id="Zbb-4x-EFi"/>
                             <constraint firstItem="SIH-X0-bCu" firstAttribute="top" secondItem="L9s-kH-axL" secondAttribute="bottom" constant="10" id="aah-dg-x65"/>
                             <constraint firstItem="w0n-eg-X43" firstAttribute="bottom" secondItem="hnu-xI-2C1" secondAttribute="bottom" constant="15" id="fS8-ha-M4J"/>
-                            <constraint firstItem="w0n-eg-X43" firstAttribute="bottom" secondItem="SIH-X0-bCu" secondAttribute="bottom" constant="100" id="j2Q-lw-y1s"/>
                             <constraint firstItem="L9s-kH-axL" firstAttribute="top" secondItem="iOq-2J-keG" secondAttribute="bottom" constant="10" id="jNB-hl-6in"/>
                             <constraint firstItem="hnu-xI-2C1" firstAttribute="leading" secondItem="HHK-zh-kGW" secondAttribute="trailing" constant="10" id="o9x-aP-fPR"/>
                             <constraint firstItem="KvP-hj-d0N" firstAttribute="top" secondItem="w0n-eg-X43" secondAttribute="top" constant="135" id="oCT-bU-7w5"/>
                             <constraint firstItem="TqL-vv-eEs" firstAttribute="leading" secondItem="hnu-xI-2C1" secondAttribute="trailing" constant="10" id="qI7-7O-lTf"/>
+                            <constraint firstItem="hnu-xI-2C1" firstAttribute="top" secondItem="SIH-X0-bCu" secondAttribute="bottom" constant="70" id="xQ5-5x-2tX"/>
                             <constraint firstItem="L9s-kH-axL" firstAttribute="leading" secondItem="w0n-eg-X43" secondAttribute="leading" constant="20" id="zfs-c0-4It"/>
                         </constraints>
                     </view>
@@ -187,6 +187,165 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ef0-FL-XIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3029" y="145"/>
+        </scene>
+        <!--Email Login View Controller-->
+        <scene sceneID="Krn-ge-f2N">
+            <objects>
+                <viewController id="XA9-nX-KBo" customClass="EmailLoginViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rvr-Tl-xvg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일로 로그인하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-zG-AVw">
+                                <rect key="frame" x="20" y="128" width="176" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PZ-Qw-5ka">
+                                <rect key="frame" x="25" y="189.5" width="60" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@email.com" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-nD-Lha">
+                                <rect key="frame" x="20" y="213.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Edg-kx-Ll5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXx-72-DNA">
+                                <rect key="frame" x="25" y="278.5" width="45" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6자 이상의 비밀번호" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="slD-Yu-qA5">
+                                <rect key="frame" x="20" y="302.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fnQ-KF-OYV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVr-ZA-9fz">
+                                <rect key="frame" x="20" y="367.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bQ4-0r-DKa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="XA9-nX-KBo" eventType="touchUpInside" id="fDv-Ee-cKG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t60-Ov-j0T">
+                                <rect key="frame" x="206" y="442.5" width="2" height="15"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="Hbc-fz-Mgl"/>
+                                    <constraint firstAttribute="height" constant="15" id="sro-4n-CWC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXG-7w-KBI">
+                                <rect key="frame" x="218" y="436" width="71" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="비밀번호 찾기">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findPasswordButton:" destination="XA9-nX-KBo" eventType="touchUpInside" id="e9l-RZ-hGC"/>
+                                    <action selector="signUpBottomSheetButton:" destination="3Jn-eh-X1x" eventType="touchUpInside" id="XqW-Sc-9gx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zku-Pn-Qsh">
+                                <rect key="frame" x="136" y="436" width="60" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="이메일 찾기">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findEmailButton:" destination="XA9-nX-KBo" eventType="touchUpInside" id="7cu-MQ-U8m"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcr-ss-eIO">
+                                <rect key="frame" x="127" y="812" width="160" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0h-nf-EJ5">
+                                        <rect key="frame" x="0.0" y="6.5" width="108" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqj-xv-M71">
+                                        <rect key="frame" x="113" y="6.5" width="49" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="I0h-nf-EJ5" firstAttribute="leading" secondItem="Pcr-ss-eIO" secondAttribute="leading" id="EWK-a5-0lX"/>
+                                    <constraint firstItem="wqj-xv-M71" firstAttribute="leading" secondItem="I0h-nf-EJ5" secondAttribute="trailing" constant="5" id="LpB-eh-1cg"/>
+                                    <constraint firstItem="I0h-nf-EJ5" firstAttribute="centerY" secondItem="Pcr-ss-eIO" secondAttribute="centerY" id="XqB-0Q-XgH"/>
+                                    <constraint firstAttribute="height" constant="30" id="eeM-YJ-MZy"/>
+                                    <constraint firstAttribute="width" constant="160" id="qO6-Pg-pdU"/>
+                                    <constraint firstItem="wqj-xv-M71" firstAttribute="centerY" secondItem="Pcr-ss-eIO" secondAttribute="centerY" id="xbG-gO-4rD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="56U-25-kIT" appends="YES" id="tni-KM-GXh"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1zs-Tn-etI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="slD-Yu-qA5" firstAttribute="top" secondItem="vXx-72-DNA" secondAttribute="bottom" constant="8" id="4ns-mS-jLT"/>
+                            <constraint firstItem="yXG-7w-KBI" firstAttribute="centerY" secondItem="t60-Ov-j0T" secondAttribute="centerY" id="5hl-tF-luo"/>
+                            <constraint firstItem="1zs-Tn-etI" firstAttribute="trailing" secondItem="VVr-ZA-9fz" secondAttribute="trailing" constant="20" id="Apb-gh-auw"/>
+                            <constraint firstItem="dXe-nD-Lha" firstAttribute="top" secondItem="8PZ-Qw-5ka" secondAttribute="bottom" constant="8" id="DlC-iv-Jrp"/>
+                            <constraint firstItem="1zs-Tn-etI" firstAttribute="trailing" secondItem="dXe-nD-Lha" secondAttribute="trailing" constant="20" id="GjH-2X-VhS"/>
+                            <constraint firstItem="slD-Yu-qA5" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="20" id="HnK-Kv-Nzk"/>
+                            <constraint firstItem="8PZ-Qw-5ka" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="25" id="LRN-YU-TsX"/>
+                            <constraint firstItem="YtS-zG-AVw" firstAttribute="top" secondItem="1zs-Tn-etI" secondAttribute="top" constant="40" id="Llf-J0-oqy"/>
+                            <constraint firstItem="VVr-ZA-9fz" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="20" id="LqB-uR-bLY"/>
+                            <constraint firstItem="t60-Ov-j0T" firstAttribute="leading" secondItem="Zku-Pn-Qsh" secondAttribute="trailing" constant="10" id="NeF-Vo-NYL"/>
+                            <constraint firstItem="1zs-Tn-etI" firstAttribute="trailing" secondItem="slD-Yu-qA5" secondAttribute="trailing" constant="20" id="SJx-FT-qHS"/>
+                            <constraint firstItem="Zku-Pn-Qsh" firstAttribute="centerY" secondItem="t60-Ov-j0T" secondAttribute="centerY" id="Tx2-rg-cUI"/>
+                            <constraint firstItem="yXG-7w-KBI" firstAttribute="leading" secondItem="t60-Ov-j0T" secondAttribute="trailing" constant="10" id="Uhh-G5-bWQ"/>
+                            <constraint firstItem="1zs-Tn-etI" firstAttribute="bottom" secondItem="Pcr-ss-eIO" secondAttribute="bottom" constant="20" id="YJQ-xd-tVV"/>
+                            <constraint firstItem="8PZ-Qw-5ka" firstAttribute="top" secondItem="YtS-zG-AVw" secondAttribute="bottom" constant="35" id="e4r-Sd-AZF"/>
+                            <constraint firstItem="VVr-ZA-9fz" firstAttribute="top" secondItem="slD-Yu-qA5" secondAttribute="bottom" constant="20" id="hIK-gN-h6N"/>
+                            <constraint firstItem="vXx-72-DNA" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="25" id="hkK-Sc-iB8"/>
+                            <constraint firstItem="t60-Ov-j0T" firstAttribute="centerX" secondItem="1zs-Tn-etI" secondAttribute="centerX" id="mEZ-Zm-C0R"/>
+                            <constraint firstItem="vXx-72-DNA" firstAttribute="top" secondItem="dXe-nD-Lha" secondAttribute="bottom" constant="20" id="pwE-PL-Mu1"/>
+                            <constraint firstItem="YtS-zG-AVw" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="20" id="spz-fK-uZs"/>
+                            <constraint firstItem="dXe-nD-Lha" firstAttribute="leading" secondItem="1zs-Tn-etI" secondAttribute="leading" constant="20" id="tLF-aK-Go6"/>
+                            <constraint firstItem="Pcr-ss-eIO" firstAttribute="centerX" secondItem="1zs-Tn-etI" secondAttribute="centerX" id="tzn-of-G9f"/>
+                            <constraint firstItem="t60-Ov-j0T" firstAttribute="top" secondItem="VVr-ZA-9fz" secondAttribute="bottom" constant="30" id="zmy-ns-r4y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HrV-09-rJd"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="dXe-nD-Lha" id="gRJ-qX-kVR"/>
+                        <outlet property="loginButton" destination="VVr-ZA-9fz" id="70N-nl-bSB"/>
+                        <outlet property="passwordTextField" destination="slD-Yu-qA5" id="p7P-Ee-6Nt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dC7-tR-5SL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="56U-25-kIT">
+                    <connections>
+                        <action selector="showSignUpBottomSheet:" destination="XA9-nX-KBo" id="q7i-k7-6Gr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3860.8695652173915" y="144.64285714285714"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="UuZ-IN-bTu">
@@ -235,6 +394,9 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="zigzagbox" width="450" height="450"/>
         <image name="zigzag로고" width="226" height="94"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

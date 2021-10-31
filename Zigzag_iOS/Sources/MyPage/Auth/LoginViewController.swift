@@ -12,7 +12,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setUI()
+        setLogoImageView()
+        setKakaoLoginButton()
+        setAppleLoginButton()
+        setEmailLoginButton()
         self.navigationController?.navigationBar.isTransparent = true
     }
     
@@ -26,23 +29,28 @@ class LoginViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func TapEmailLoginButton(_ sender: Any) {
-        
-    }
-    
     @IBAction func signUpBottomSheetButton(_ sender: Any) {
         
     }
     
-    func setUI() {
+    func setLogoImageView() {
         zigzagLogoImageView.clipsToBounds = true
         zigzagLogoImageView.layer.cornerRadius = 20
+    }
+    
+    func setKakaoLoginButton() {
         kakaoLoginButton.layer.cornerRadius = 20
         kakaoLoginButton.backgroundColor = .kakaoYellow
+    }
+    
+    func setAppleLoginButton() {
         appleLoginButton.layer.cornerRadius = 20
         appleLoginButton.backgroundColor = .white
         appleLoginButton.layer.borderWidth = 1
         appleLoginButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
+    func setEmailLoginButton() {
         emailLoginButton.setTitle("이메일로 로그인", for: .normal)
         emailLoginButton.setTitleColor(.black, for: .normal)
         emailLoginButton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
