@@ -38,6 +38,7 @@
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
 		2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */; };
 		2DED64AF273024490050DCF7 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AE273024490050DCF7 /* CompleteViewController.swift */; };
+		2DED64B32730377B0050DCF7 /* HomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64B22730377B0050DCF7 /* HomeMenuCell.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
 		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
@@ -81,6 +82,7 @@
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
 		2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEmailPasswordViewController.swift; sourceTree = "<group>"; };
 		2DED64AE273024490050DCF7 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
+		2DED64B22730377B0050DCF7 /* HomeMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCell.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				2D4C9E9D272D7B320069BB3B /* HomeStoryboard.storyboard */,
 				2D4C9EAC272D80BC0069BB3B /* HomeViewController.swift */,
+				2DED64B22730377B0050DCF7 /* HomeMenuCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */,
+				2DED64B32730377B0050DCF7 /* HomeMenuCell.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,

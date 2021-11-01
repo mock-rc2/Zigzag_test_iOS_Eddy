@@ -9,10 +9,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    private let menuList: [String] = ["홈", "Brand", "베스트", "세일"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setNavigationBar()
+        setCollectionView()
+        setFirstIndexIsSelected()
     }
     
     func setNavigationBar() {
@@ -33,4 +38,46 @@ class HomeViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: .plain, target: self, action: nil)
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.mainPink
     }
+    
+    func setCollectionView() {
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.isScrollEnabled = false
+        collectionView.reloadData()
+    }
+    
+    func setFirstIndexIsSelected() {
+        let selectedIndexPath = IndexPath(item: 0, section: 0)
+        collectionView.selectItem(at: selectedIndexPath, animated: false, scrollPosition: .bottom) // 0번째 Index로
+    }
+}
+
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width / 4 , height: 45)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return menuList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeMenuCell", for: indexPath) as? HomeMenuCell
+        else {
+            return UICollectionViewCell()
+        }
+        if indexPath.item == 0 {
+            cell.isSelected = true
+        } else {
+            cell.isSelected = false
+        }
+        cell.menuLabel.text = menuList[indexPath.item]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
 }
