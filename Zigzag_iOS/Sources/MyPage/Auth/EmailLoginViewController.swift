@@ -9,6 +9,10 @@ import UIKit
 
 class EmailLoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -19,10 +23,6 @@ class EmailLoginViewController: UIViewController {
         emailTextField.becomeFirstResponder()
         dismissKeyboardWhenTappedAround()
     }
-
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
 
     func setNavigationBar() {
         self.navigationController?.navigationBar.isTransparent = true

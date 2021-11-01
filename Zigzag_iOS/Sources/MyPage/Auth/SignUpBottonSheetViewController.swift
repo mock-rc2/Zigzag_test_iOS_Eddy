@@ -32,7 +32,8 @@ class SignUpBottonSheetViewController: UIViewController {
     }
     
     @IBAction func signUpForEmailButtonTap(_ sender: Any) {
-        
+        LoginViewController.isTappedEmailSignUp = true
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

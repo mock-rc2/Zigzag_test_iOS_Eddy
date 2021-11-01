@@ -34,6 +34,8 @@
 		2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */; };
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
+		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
+		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
 		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
@@ -73,6 +75,8 @@
 		2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
+		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
+		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 				2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */,
 				2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */,
 				2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */,
+				2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */,
+				2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
@@ -394,6 +401,7 @@
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
+				2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,
 				2D4C9EAD272D80BC0069BB3B /* HomeViewController.swift in Sources */,
 				2D4C9E70272D41D60069BB3B /* String.swift in Sources */,

@@ -10,6 +10,12 @@ import PanModal
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var zigzagLogoImageView: UIImageView!
+    @IBOutlet weak var kakaoLoginButton: UIView!
+    @IBOutlet weak var appleLoginButton: UIView!
+    @IBOutlet weak var emailLoginButton: UIButton!
+    static var isTappedEmailSignUp = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -20,10 +26,13 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.isTransparent = true
     }
     
-    @IBOutlet weak var zigzagLogoImageView: UIImageView!
-    @IBOutlet weak var kakaoLoginButton: UIView!
-    @IBOutlet weak var appleLoginButton: UIView!
-    @IBOutlet weak var emailLoginButton: UIButton!
+    override func viewWillAppear(_ animated: Bool) {
+        if LoginViewController.isTappedEmailSignUp {
+            let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TermOfServiceViewController") as! TermOfServiceViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            LoginViewController.isTappedEmailSignUp = false
+        }
+    }
     
     
     @IBAction func dismissButton(_ sender: Any) {
