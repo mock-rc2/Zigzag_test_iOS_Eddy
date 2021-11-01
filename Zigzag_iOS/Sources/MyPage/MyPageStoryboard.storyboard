@@ -917,6 +917,9 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="z3y-en-6BN" kind="show" id="yr2-px-eiq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpC-Kf-o6e">
                                 <rect key="frame" x="314" y="125.5" width="80" height="45"/>
@@ -967,6 +970,131 @@
             </objects>
             <point key="canvasLocation" x="5130" y="584"/>
         </scene>
+        <!--Set Email Password View Controller-->
+        <scene sceneID="VeS-QA-HrC">
+            <objects>
+                <viewController id="z3y-en-6BN" customClass="SetEmailPasswordViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X6i-JY-5eR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일과 비밀번호를" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BJ-Tw-uGW">
+                                <rect key="frame" x="20" y="40" width="176" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-aa-wx6">
+                                <rect key="frame" x="20" y="66.5" width="122" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXi-dd-NfS">
+                                <rect key="frame" x="25" y="128.5" width="60" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@email.com" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZkK-Kj-MhN">
+                                <rect key="frame" x="20" y="152.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6xc-G9-8fd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvy-fP-K2u">
+                                <rect key="frame" x="25" y="217.5" width="45" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="영문, 숫자, 특수문자 포함 8자 이상" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="9oX-mx-ppe">
+                                <rect key="frame" x="20" y="241.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VCM-q4-vKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqP-f5-P0K">
+                                <rect key="frame" x="20" y="306.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2z1-ch-ZUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GQ1-J4-uSE" kind="show" id="f4N-QI-ihG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6qs-hk-78z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qvy-fP-K2u" firstAttribute="top" secondItem="ZkK-Kj-MhN" secondAttribute="bottom" constant="20" id="3kV-2S-xez"/>
+                            <constraint firstItem="6qs-hk-78z" firstAttribute="trailing" secondItem="9oX-mx-ppe" secondAttribute="trailing" constant="20" id="6Bt-eq-cDK"/>
+                            <constraint firstItem="1BJ-Tw-uGW" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="20" id="6Ni-Zo-yz3"/>
+                            <constraint firstItem="6qs-hk-78z" firstAttribute="trailing" secondItem="iqP-f5-P0K" secondAttribute="trailing" constant="20" id="6fK-pY-g1h"/>
+                            <constraint firstItem="sXi-dd-NfS" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="25" id="G7O-0D-sEM"/>
+                            <constraint firstItem="1BJ-Tw-uGW" firstAttribute="top" secondItem="6qs-hk-78z" secondAttribute="top" constant="40" id="H76-eb-FH0"/>
+                            <constraint firstItem="iqP-f5-P0K" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="20" id="KjP-Wh-aHf"/>
+                            <constraint firstItem="9oX-mx-ppe" firstAttribute="top" secondItem="qvy-fP-K2u" secondAttribute="bottom" constant="8" id="Ldf-Tz-Qk9"/>
+                            <constraint firstItem="ejq-aa-wx6" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="20" id="Ndd-eW-MPP"/>
+                            <constraint firstItem="iqP-f5-P0K" firstAttribute="top" secondItem="9oX-mx-ppe" secondAttribute="bottom" constant="20" id="Nx1-he-aCS"/>
+                            <constraint firstItem="ZkK-Kj-MhN" firstAttribute="top" secondItem="sXi-dd-NfS" secondAttribute="bottom" constant="8" id="ZTC-S2-CWQ"/>
+                            <constraint firstItem="ejq-aa-wx6" firstAttribute="top" secondItem="1BJ-Tw-uGW" secondAttribute="bottom" id="ZkG-Jo-bp9"/>
+                            <constraint firstItem="ZkK-Kj-MhN" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="20" id="awF-hA-xIz"/>
+                            <constraint firstItem="6qs-hk-78z" firstAttribute="trailing" secondItem="ZkK-Kj-MhN" secondAttribute="trailing" constant="20" id="kuU-u1-3ug"/>
+                            <constraint firstItem="9oX-mx-ppe" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="20" id="mxJ-JZ-4sh"/>
+                            <constraint firstItem="qvy-fP-K2u" firstAttribute="leading" secondItem="6qs-hk-78z" secondAttribute="leading" constant="25" id="w9j-NR-1yn"/>
+                            <constraint firstItem="sXi-dd-NfS" firstAttribute="top" secondItem="ejq-aa-wx6" secondAttribute="bottom" constant="35" id="xfY-do-u29"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ahb-O2-hXL"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="ZkK-Kj-MhN" id="12a-6f-NfG"/>
+                        <outlet property="passwordTextField" destination="9oX-mx-ppe" id="Yvp-Kp-y5W"/>
+                        <outlet property="signUpButton" destination="iqP-f5-P0K" id="a1d-hq-RUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUK-79-DW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6062" y="584"/>
+        </scene>
+        <!--Complete View Controller-->
+        <scene sceneID="uxl-xM-ixl">
+            <objects>
+                <viewController id="GQ1-J4-uSE" customClass="CompleteViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5wt-zs-Ry1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzagcomplete" translatesAutoresizingMaskIntoConstraints="NO" id="iRd-GB-d1e">
+                                <rect key="frame" x="0.0" y="254" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="yhz-71-Ewo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cS0-HQ-Ijd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cS0-HQ-Ijd" firstAttribute="trailing" secondItem="iRd-GB-d1e" secondAttribute="trailing" id="1dB-8f-jgA"/>
+                            <constraint firstItem="iRd-GB-d1e" firstAttribute="centerY" secondItem="cS0-HQ-Ijd" secondAttribute="centerY" id="OjV-q5-Y9T"/>
+                            <constraint firstItem="iRd-GB-d1e" firstAttribute="centerX" secondItem="cS0-HQ-Ijd" secondAttribute="centerX" id="hz6-Oe-gDP"/>
+                            <constraint firstItem="iRd-GB-d1e" firstAttribute="leading" secondItem="cS0-HQ-Ijd" secondAttribute="leading" id="k8M-Mz-gpv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QMW-z4-d7v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbS-zw-O4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6889.8550724637689" y="583.92857142857144"/>
+        </scene>
     </scenes>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
@@ -977,6 +1105,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="zigzagbox" width="450" height="450"/>
+        <image name="zigzagcomplete" width="414" height="420"/>
         <image name="zigzag로고" width="226" height="94"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

@@ -36,6 +36,8 @@
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
+		2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */; };
+		2DED64AF273024490050DCF7 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AE273024490050DCF7 /* CompleteViewController.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
 		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
@@ -77,6 +79,8 @@
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
+		2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEmailPasswordViewController.swift; sourceTree = "<group>"; };
+		2DED64AE273024490050DCF7 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 				2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */,
 				2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */,
 				2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */,
+				2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */,
+				2DED64AE273024490050DCF7 /* CompleteViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -408,12 +414,14 @@
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
+				2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */,
 				2D4C9E4E272D18520069BB3B /* SceneDelegate.swift in Sources */,
 				2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */,
 				2D4C9E63272D1CD30069BB3B /* Constant.swift in Sources */,
 				2D4C9E73272D41E20069BB3B /* Color.swift in Sources */,
 				2D4C9E82272D43010069BB3B /* IndicatorView.swift in Sources */,
 				2D4C9E7F272D421D0069BB3B /* UINavigationBar.swift in Sources */,
+				2DED64AF273024490050DCF7 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
