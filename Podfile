@@ -9,5 +9,6 @@ target 'Zigzag_iOS' do
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityIndicator'
   pod 'SnapKit'
+  pod 'PanModal'
 
 end

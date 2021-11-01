@@ -90,6 +90,6 @@ class EmailLoginViewController: UIViewController {
     }
     
     @IBAction func showSignUpBottomSheet(_ sender: Any) {
-        print("gi")
+        
     }
 }

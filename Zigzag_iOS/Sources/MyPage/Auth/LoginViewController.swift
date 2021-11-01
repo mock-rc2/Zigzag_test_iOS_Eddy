@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PanModal
 
 class LoginViewController: UIViewController {
 
@@ -30,7 +31,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpBottomSheetButton(_ sender: Any) {
-        
+        let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "SignUpBottonSheetVC") as! SignUpBottonSheetViewController
+        presentPanModal(vc)
     }
     
     func setLogoImageView() {
