@@ -12,7 +12,7 @@ import Pageboy
 class TabViewController: TabmanViewController {
 
     private let menuList: [String] = ["홈", "Brand", "베스트", "세일"]
-    private var viewControllers = [UIViewController(), UIViewController(), UIViewController(), UIViewController()]
+    private var viewControllers = [UIStoryboard(name: "HomeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController, BrandViewController(), BestViewController(), SaleViewController()]
 
     
     override func viewDidLoad() {

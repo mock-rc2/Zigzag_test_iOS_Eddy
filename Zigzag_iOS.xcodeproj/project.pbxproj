@@ -37,6 +37,17 @@
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
 		2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */; };
 		2DED64AF273024490050DCF7 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64AE273024490050DCF7 /* CompleteViewController.swift */; };
+		2DED64C927313FBA0050DCF7 /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64C827313FBA0050DCF7 /* BrandViewController.swift */; };
+		2DED64CD27313FC70050DCF7 /* BestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64CC27313FC70050DCF7 /* BestViewController.swift */; };
+		2DED64D027313FCD0050DCF7 /* SaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64CF27313FCD0050DCF7 /* SaleViewController.swift */; };
+		2DED64D3273141DA0050DCF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64D2273141DA0050DCF7 /* HomeViewController.swift */; };
+		2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64D72731528F0050DCF7 /* AdBannerTableViewCell.swift */; };
+		2DED64DB273152FA0050DCF7 /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64DA273152FA0050DCF7 /* DeliveryTableViewCell.swift */; };
+		2DED64E0273153750050DCF7 /* RecommendItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64DF273153750050DCF7 /* RecommendItemTableViewCell.swift */; };
+		2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64E22731539C0050DCF7 /* HomeBasicTableViewCell.swift */; };
+		2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64E527316D8D0050DCF7 /* AdBannerCollectionViewCell.swift */; };
+		2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64E8273181530050DCF7 /* RecommendItemCollectionViewCell.swift */; };
+		2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
 		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
@@ -79,6 +90,17 @@
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
 		2DED64AB27301F410050DCF7 /* SetEmailPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEmailPasswordViewController.swift; sourceTree = "<group>"; };
 		2DED64AE273024490050DCF7 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
+		2DED64C827313FBA0050DCF7 /* BrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewController.swift; sourceTree = "<group>"; };
+		2DED64CC27313FC70050DCF7 /* BestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestViewController.swift; sourceTree = "<group>"; };
+		2DED64CF27313FCD0050DCF7 /* SaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleViewController.swift; sourceTree = "<group>"; };
+		2DED64D2273141DA0050DCF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2DED64D72731528F0050DCF7 /* AdBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerTableViewCell.swift; sourceTree = "<group>"; };
+		2DED64DA273152FA0050DCF7 /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		2DED64DF273153750050DCF7 /* RecommendItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemTableViewCell.swift; sourceTree = "<group>"; };
+		2DED64E22731539C0050DCF7 /* HomeBasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicTableViewCell.swift; sourceTree = "<group>"; };
+		2DED64E527316D8D0050DCF7 /* AdBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DED64E8273181530050DCF7 /* RecommendItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicCollectionViewCell.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -200,8 +222,11 @@
 		2D4C9E91272D5E150069BB3B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2DED64D62731524A0050DCF7 /* Cell */,
+				2DED64C627313F500050DCF7 /* ExtraVC */,
 				2D4C9E9D272D7B320069BB3B /* HomeStoryboard.storyboard */,
 				2D4C9EAC272D80BC0069BB3B /* TabViewController.swift */,
+				2DED64D2273141DA0050DCF7 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,6 +266,30 @@
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		2DED64C627313F500050DCF7 /* ExtraVC */ = {
+			isa = PBXGroup;
+			children = (
+				2DED64C827313FBA0050DCF7 /* BrandViewController.swift */,
+				2DED64CC27313FC70050DCF7 /* BestViewController.swift */,
+				2DED64CF27313FCD0050DCF7 /* SaleViewController.swift */,
+			);
+			path = ExtraVC;
+			sourceTree = "<group>";
+		};
+		2DED64D62731524A0050DCF7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2DED64D72731528F0050DCF7 /* AdBannerTableViewCell.swift */,
+				2DED64DA273152FA0050DCF7 /* DeliveryTableViewCell.swift */,
+				2DED64DF273153750050DCF7 /* RecommendItemTableViewCell.swift */,
+				2DED64E22731539C0050DCF7 /* HomeBasicTableViewCell.swift */,
+				2DED64E527316D8D0050DCF7 /* AdBannerCollectionViewCell.swift */,
+				2DED64E8273181530050DCF7 /* RecommendItemCollectionViewCell.swift */,
+				2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2DFD1EFC272EDFBC00E6EDD4 /* Auth */ = {
@@ -394,26 +443,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */,
+				2DED64DB273152FA0050DCF7 /* DeliveryTableViewCell.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
+				2DED64C927313FBA0050DCF7 /* BrandViewController.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
 				2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */,
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
+				2DED64D027313FCD0050DCF7 /* SaleViewController.swift in Sources */,
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
 				2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */,
+				2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */,
+				2DED64E0273153750050DCF7 /* RecommendItemTableViewCell.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,
 				2D4C9EAD272D80BC0069BB3B /* TabViewController.swift in Sources */,
 				2D4C9E70272D41D60069BB3B /* String.swift in Sources */,
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
+				2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */,
+				2DED64D3273141DA0050DCF7 /* HomeViewController.swift in Sources */,
+				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
+				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
+				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
 				2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */,
 				2D4C9E4E272D18520069BB3B /* SceneDelegate.swift in Sources */,
 				2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */,
 				2D4C9E63272D1CD30069BB3B /* Constant.swift in Sources */,
+				2DED64CD27313FC70050DCF7 /* BestViewController.swift in Sources */,
 				2D4C9E73272D41E20069BB3B /* Color.swift in Sources */,
 				2D4C9E82272D43010069BB3B /* IndicatorView.swift in Sources */,
 				2D4C9E7F272D421D0069BB3B /* UINavigationBar.swift in Sources */,
