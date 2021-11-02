@@ -110,19 +110,33 @@ class TermOfServiceViewController: UIViewController {
     }
     
     func checkMarketingButton() {
-        if selectiveMarketingButton.isSelected, !agreeSMSButton.isSelected, !agreeEmailButton.isSelected {
-            agreeSMSButton.isSelected = true
-            agreeEmailButton.isSelected = true
-            agreeSMSButton.tintColor = .mainPink
-            agreeEmailButton.tintColor = .mainPink
-        } else if !selectiveMarketingButton.isSelected {
+        if selectiveMarketingButton.isSelected {
+            [agreeSMSButton, agreeEmailButton].forEach {
+                $0?.isSelected = true
+                $0?.tintColor = .mainPink
+            }
+        } else {
+            [agreeSMSButton, agreeEmailButton].forEach {
+                $0?.isSelected = false
+                $0?.tintColor = .tertiaryLabel
+            }
+        }
+        
+        /* sms만 누른경우 */
+        if agreeSMSButton.isSelected {
+            selectiveMarketingButton.isSelected = true
+            selectiveMarketingButton.tintColor = .mainPink
+        } else {
             agreeSMSButton.isSelected = false
-            agreeEmailButton.isSelected = false
             agreeSMSButton.tintColor = .tertiaryLabel
+        }
+        /* 이메일만 누른경우 */
+        if agreeEmailButton.isSelected {
+            selectiveMarketingButton.isSelected = true
+            selectiveMarketingButton.tintColor = .mainPink
+        } else {
+            agreeEmailButton.isSelected = false
             agreeEmailButton.tintColor = .tertiaryLabel
-        } else if !agreeSMSButton.isSelected, !agreeEmailButton.isSelected {
-            selectiveMarketingButton.isSelected = false
-            selectiveMarketingButton.tintColor = .tertiaryLabel
         }
     }
     
