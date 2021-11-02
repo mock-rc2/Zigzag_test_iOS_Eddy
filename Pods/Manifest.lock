@@ -2,28 +2,36 @@ PODS:
   - Alamofire (5.4.3)
   - AlamofireNetworkActivityIndicator (3.1.0):
     - Alamofire (~> 5.1)
+  - Pageboy (3.6.2)
   - PanModal (1.2.7)
   - SnapKit (5.0.1)
+  - Tabman (2.11.1):
+    - Pageboy (~> 3.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
   - PanModal
   - SnapKit
+  - Tabman (~> 2.11)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityIndicator
+    - Pageboy
     - PanModal
     - SnapKit
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
 
-PODFILE CHECKSUM: b56bb5fbd03bae1f3c1003e45dd6e4561ea2a45f
+PODFILE CHECKSUM: e0f051baa17a2dfe7b7553098b029054cb5c2c2e
 
 COCOAPODS: 1.10.1

@@ -10,5 +10,6 @@ target 'Zigzag_iOS' do
   pod 'AlamofireNetworkActivityIndicator'
   pod 'SnapKit'
   pod 'PanModal'
+  pod 'Tabman', '~> 2.11'
 
 end
