@@ -26,3 +26,11 @@
 => 가입하기를 누를 때 기존 LoginVC에 static Bool 변수를 생성하여 PanModal에서 왔을 시 변수 값을 바꾸는 식으로 해결
 3. 약관 동의 View에서 버튼 알고리즘을 구현하기 어려움 (RxSwift를 사용해야할 것 같음) -> 일일이 직접 조건문으로 구현하였는데 SMS, 이메일 부분은 조건문으로 한계가 있어서 완벽히 구현하지는 못함
 4. 홈 화면의 MenuBar를 구현할 때, 초기값으로 홈의 밑에만 밑줄이 있게 설정을 하였는데 다른 menu를 선택했을때도 밑줄이 사라지지 않음 -> 구글링을 통해 해결
+
+## 2021-11-02 (화) 진행현황
+- 홈 화면의 MenuBar를 CollectionView로 구현하였었는데 Tabman 라이브러리로 교체함
+- 홈 화면의 UI를 80% 정도 구현 (해결 못한 이슈 2개와 하트 버튼 추가)
+
+#### 개발 중 이슈 
+1. TableView의 rowheight을 AutoDimension으로 설정하면 제멋대로 설정이 되버림 -> 아직 해결 X
+2. Cell안의 ImageView의 width Constraints를 정하지 않으면 제멋대로 Cell 크기가 변함 -> width Constraints를 주어서 해결은 했지만 다른 기종에서의 AutoLayout이 원하는 대로 적용이 안됨
