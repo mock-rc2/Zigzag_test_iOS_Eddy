@@ -1028,7 +1028,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GQ1-J4-uSE" kind="show" id="f4N-QI-ihG"/>
+                                    <action selector="signUpButtonTap:" destination="z3y-en-6BN" eventType="touchUpInside" id="G8d-Bz-If9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1068,13 +1068,13 @@
         <!--Complete View Controller-->
         <scene sceneID="uxl-xM-ixl">
             <objects>
-                <viewController id="GQ1-J4-uSE" customClass="CompleteViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompleteVC" id="GQ1-J4-uSE" customClass="CompleteViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5wt-zs-Ry1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzagcomplete" translatesAutoresizingMaskIntoConstraints="NO" id="iRd-GB-d1e">
-                                <rect key="frame" x="0.0" y="254" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="303" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="yhz-71-Ewo"/>
                                 </constraints>

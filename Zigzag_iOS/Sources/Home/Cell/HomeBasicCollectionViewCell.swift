@@ -13,4 +13,5 @@ class HomeBasicCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var basicTitleLabel: UILabel!
     @IBOutlet weak var basicDescriptionLabel: UILabel!
     @IBOutlet weak var basicPriceLabel: UILabel!
+    @IBOutlet weak var basicLikeButton: UIButton!
 }

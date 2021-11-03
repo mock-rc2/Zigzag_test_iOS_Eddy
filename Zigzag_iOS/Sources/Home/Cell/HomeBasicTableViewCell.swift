@@ -27,7 +27,7 @@ class HomeBasicTableViewCell: UITableViewCell {
 extension HomeBasicTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (homeBasicCollectionView.frame.width/2) - 20 , height: 300)
+        return CGSize(width: (homeBasicCollectionView.frame.width/2) - 20 , height: 250)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

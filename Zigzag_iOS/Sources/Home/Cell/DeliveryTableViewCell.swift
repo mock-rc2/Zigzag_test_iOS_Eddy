@@ -23,8 +23,8 @@ class DeliveryTableViewCell: UITableViewCell {
 
     func setDeliveryButton() {
         deliveryButton.layer.masksToBounds = false
-        deliveryButton.layer.shadowRadius = 10
-        deliveryButton.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        deliveryButton.layer.shadowRadius = 6
+        deliveryButton.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         deliveryButton.layer.shadowOpacity = 0.2
         deliveryButton.layer.shadowColor = UIColor.black.cgColor
     }

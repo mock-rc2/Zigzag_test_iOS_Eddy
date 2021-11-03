@@ -13,6 +13,6 @@ class RecommendItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemTitleLabel: UILabel!
     @IBOutlet weak var itemDescriptionLabel: UILabel!
     @IBOutlet weak var itemPriceLabel: UILabel!
-    
+    @IBOutlet weak var itemLikeButton: UIButton!
     
 }

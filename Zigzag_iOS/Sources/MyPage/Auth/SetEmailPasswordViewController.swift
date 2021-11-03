@@ -76,4 +76,23 @@ class SetEmailPasswordViewController: UIViewController {
     @objc func backToPrevious() {
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func signUpButtonTap(_ sender: Any) {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            SignUpRequest().sendSignUpData(email: email, password: password, viewController: self)
+        }
+    }
+    
+}
+
+extension SetEmailPasswordViewController {
+    
+    func didSignUpSuccess() {
+        let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CompleteVC") as! CompleteViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func didSignUpFailure(message: String) {
+        presentBottomAlert(message: message)
+    }
 }
