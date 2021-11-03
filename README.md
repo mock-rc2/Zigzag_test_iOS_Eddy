@@ -32,5 +32,10 @@
 - 홈 화면의 UI를 80% 정도 구현 (해결 못한 이슈 2개와 하트 버튼 추가)
 
 #### 개발 중 이슈 
-1. TableView의 rowheight을 AutoDimension으로 설정하면 제멋대로 설정이 되버림 -> 아직 해결 X
+1. TableView의 rowHeight을 AutoDimension으로 설정하면 제멋대로 설정이 되버림 -> 아직 해결 X
 2. Cell안의 ImageView의 width Constraints를 정하지 않으면 제멋대로 Cell 크기가 변함 -> width Constraints를 주어서 해결은 했지만 다른 기종에서의 AutoLayout이 원하는 대로 적용이 안됨
+
+## 2021-11-03 (수) 진행현황
+- 회원가입 API를 엮어서 구현, 회원가입 실패시 밑에 경고창으로 보여주는 식으로 구현
+- 홈 화면의 UI rowHeight 버그 해결, 하트 버튼 추가
+
