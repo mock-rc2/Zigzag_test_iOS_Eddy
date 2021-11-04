@@ -39,3 +39,10 @@
 - 회원가입 API를 엮어서 구현, 회원가입 실패시 밑에 경고창으로 보여주는 식으로 구현
 - 홈 화면의 UI rowHeight 버그 해결, 하트 버튼 추가
 
+## 2021-11-04 (목) 진행현황
+- WKWebView로 상세 페이지 구현
+- 웹사이트 연결, 네비게이션 바 구현, 툴바는 80% 구현
+
+#### 개발 중 이슈 
+1. TableViewCell안의 CollectionViewCell을 클릭할 때 pushViewController로 넘어가고 싶었는데 안됨 -> Delegate 패턴으로 해결함
+2. Toolbar에서 BarButtonItem이 레이아웃이 뒤죽박죽으로 됨 -> 아직 해결 X
