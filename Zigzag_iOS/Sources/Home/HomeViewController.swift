@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CellToViewController {
-    func performSegue(with data: String)
+    func pushVC(data: String)
 }
 
 class HomeViewController: UIViewController {
@@ -24,9 +24,11 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellToViewController {
     
-    func performSegue(with data: String) {
+    func pushVC(data: String) {
+        let vc = UIStoryboard(name: "HomeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "DetailWebVC") as! DetailWebViewController
         self.navigationController?.modalPresentationStyle = .fullScreen
-        self.performSegue(withIdentifier: "DetailWebVC", sender: data)
+        self.navigationController?.pushViewController(vc, animated: true)
+        DetailWebViewController.navbarTitle = data
     }
     
     

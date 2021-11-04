@@ -46,7 +46,7 @@ extension RecommendItemTableViewCell: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.cellToVCDelegate?.performSegue(with: "쇼핑몰 이름")
+        self.cellToVCDelegate?.pushVC(data: "쇼핑몰 이름")
     }
     
 }
