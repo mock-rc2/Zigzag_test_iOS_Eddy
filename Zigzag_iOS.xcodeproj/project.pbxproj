@@ -50,6 +50,7 @@
 		2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */; };
 		2DED64F02732BDEA0050DCF7 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EF2732BDEA0050DCF7 /* SignUpEntity.swift */; };
 		2DED64F32732BE040050DCF7 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64F22732BE040050DCF7 /* SignUpRequest.swift */; };
+		2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED65002733B9190050DCF7 /* DetailWebViewController.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
 		2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */; };
@@ -105,6 +106,7 @@
 		2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicCollectionViewCell.swift; sourceTree = "<group>"; };
 		2DED64EF2732BDEA0050DCF7 /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
 		2DED64F22732BE040050DCF7 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		2DED65002733B9190050DCF7 /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				2D4C9E9D272D7B320069BB3B /* HomeStoryboard.storyboard */,
 				2D4C9EAC272D80BC0069BB3B /* TabViewController.swift */,
 				2DED64D2273141DA0050DCF7 /* HomeViewController.swift */,
+				2DED65002733B9190050DCF7 /* DetailWebViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				2D4C9EAD272D80BC0069BB3B /* TabViewController.swift in Sources */,
 				2D4C9E70272D41D60069BB3B /* String.swift in Sources */,
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
+				2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
 				2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */,

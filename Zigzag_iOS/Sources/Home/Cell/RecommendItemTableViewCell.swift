@@ -11,6 +11,8 @@ class RecommendItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var recommendCollectionView: UICollectionView!
     
+    var cellToVCDelegate: CellToViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         recommendCollectionView.delegate = self
@@ -41,6 +43,10 @@ extension RecommendItemTableViewCell: UICollectionViewDelegate, UICollectionView
         cell.itemPriceLabel.text = "24,120"
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.cellToVCDelegate?.performSegue(with: "쇼핑몰 이름")
     }
     
 }

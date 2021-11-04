@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CellToViewController {
+    func performSegue(with data: String)
+}
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -18,7 +22,13 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellToViewController {
+    
+    func performSegue(with data: String) {
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.performSegue(withIdentifier: "DetailWebVC", sender: data)
+    }
+    
     
     func numberOfSections(in _: UITableView) -> Int {
         return 4
@@ -41,12 +51,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
-        case 0, 2:
-            return 220
+        case 0:
+            return 250
         case 1:
             return 100
-        case 3:
+        case 2:
             return 280
+        case 3:
+            return 320
         default:
             return 0
         }
@@ -64,10 +76,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendItemTVC", for: indexPath) as? RecommendItemTableViewCell else { return UITableViewCell() }
+            cell.cellToVCDelegate = self
             return cell
             
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeBasicTVC", for: indexPath) as? HomeBasicTableViewCell else { return UITableViewCell() }
+            cell.cellToVCDelegate = self
             return cell
             
         default:

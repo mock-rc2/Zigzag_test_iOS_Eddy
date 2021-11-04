@@ -153,11 +153,11 @@
                                             <outlet property="deliveryButton" destination="xpi-8W-UqE" id="tCy-4D-E1N"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecommendItemTVC" rowHeight="250" id="axw-cs-6SN" customClass="RecommendItemTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="378" width="414" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecommendItemTVC" rowHeight="280" id="axw-cs-6SN" customClass="RecommendItemTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="378" width="414" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axw-cs-6SN" id="4dJ-GX-KfP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신을 위한 추천 아이템" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRF-66-p4k">
@@ -173,7 +173,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q7w-hV-v1Q">
-                                                    <rect key="frame" x="20" y="30" width="374" height="220"/>
+                                                    <rect key="frame" x="20" y="30" width="374" height="250"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ioj-9p-vmJ">
                                                         <size key="itemSize" width="136" height="200"/>
@@ -184,7 +184,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="RecommendItemCVC" id="mER-vb-zt6" customClass="RecommendItemCollectionViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="10" width="120" height="200"/>
+                                                            <rect key="frame" x="0.0" y="25" width="120" height="200"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8G9-5Q-q8P">
                                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
@@ -217,7 +217,7 @@
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8E-yP-B7F">
                                                                         <rect key="frame" x="90" y="90" width="20" height="22"/>
-                                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" image="heart" catalog="system"/>
                                                                     </button>
                                                                 </subviews>
@@ -262,15 +262,15 @@
                                             <outlet property="recommendCollectionView" destination="q7w-hV-v1Q" id="1bz-VD-QZ9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeBasicTVC" rowHeight="280" id="Clc-yA-0R4" customClass="HomeBasicTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="628" width="414" height="280"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeBasicTVC" rowHeight="320" id="Clc-yA-0R4" customClass="HomeBasicTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="658" width="414" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Clc-yA-0R4" id="yEz-fh-Olw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fz9-rr-etF">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="280"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fz9-rr-etF">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="300"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v95-M2-acS">
                                                         <size key="itemSize" width="180" height="260"/>
@@ -281,7 +281,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeBasicCVC" id="yYP-9v-vTD" customClass="HomeBasicCollectionViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="10" width="180" height="260"/>
+                                                            <rect key="frame" x="0.0" y="20" width="180" height="260"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hoy-zf-s1k">
                                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
@@ -314,7 +314,7 @@
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-zY-A56">
                                                                         <rect key="frame" x="153" y="160" width="20" height="22"/>
-                                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" image="heart" catalog="system"/>
                                                                     </button>
                                                                 </subviews>
@@ -374,11 +374,28 @@
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
                         <outlet property="tableView" destination="E96-5B-Xx8" id="Uon-MN-PTd"/>
+                        <segue destination="O6f-aq-kCh" kind="show" identifier="DetailWebVC" id="Hwe-Y5-Ydt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeO-DQ-erv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2037.68115942029" y="137.94642857142856"/>
+        </scene>
+        <!--Detail Web View Controller-->
+        <scene sceneID="eht-cG-yas">
+            <objects>
+                <viewController id="O6f-aq-kCh" customClass="DetailWebViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLb-6y-6Eo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wWo-fZ-hlz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tzo-IP-dgX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXm-JF-i9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3011" y="187"/>
         </scene>
         <!--홈-->
         <scene sceneID="Sot-Pr-2rh">
@@ -411,9 +428,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

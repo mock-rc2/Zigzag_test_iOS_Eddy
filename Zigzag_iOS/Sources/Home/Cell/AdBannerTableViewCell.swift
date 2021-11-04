@@ -26,7 +26,7 @@ class AdBannerTableViewCell: UITableViewCell {
 extension AdBannerTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: adCollectionView.frame.width , height: adCollectionView.frame.height)
+        return CGSize(width: adCollectionView.frame.width , height: adCollectionView.frame.height-(adCollectionView.safeAreaInsets.top + adCollectionView.safeAreaInsets.bottom))
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
