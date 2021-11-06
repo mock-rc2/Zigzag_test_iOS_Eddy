@@ -78,7 +78,9 @@ class EmailLoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
-        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            AuthRequest().sendLoginData(email: email, password: password, viewController: self)
+        }
     }
     
     @IBAction func findEmailButton(_ sender: Any) {
@@ -91,5 +93,17 @@ class EmailLoginViewController: UIViewController {
     
     @IBAction func showSignUpBottomSheet(_ sender: Any) {
         
+    }
+}
+
+extension EmailLoginViewController {
+    
+    func didLoginSuccess() {
+        UserDefaults.standard.setValue(true, forKey: UserDefaultKey.loginStatus)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func didLoginFailure(message: String) {
+        presentBottomAlert(message: message)
     }
 }

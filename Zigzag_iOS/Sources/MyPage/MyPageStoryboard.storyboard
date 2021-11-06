@@ -30,6 +30,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0fU-kb-qLV"/>
+                    <connections>
+                        <outlet property="authOrInfoButton" destination="tpy-qy-2ts" id="NFd-sp-o4R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uil-F7-BIO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

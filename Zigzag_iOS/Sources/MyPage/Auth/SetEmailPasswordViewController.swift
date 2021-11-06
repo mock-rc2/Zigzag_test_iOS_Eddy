@@ -79,7 +79,7 @@ class SetEmailPasswordViewController: UIViewController {
     
     @IBAction func signUpButtonTap(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            SignUpRequest().sendSignUpData(email: email, password: password, viewController: self)
+            AuthRequest().sendSignUpData(email: email, password: password, viewController: self)
         }
     }
     
@@ -88,6 +88,7 @@ class SetEmailPasswordViewController: UIViewController {
 extension SetEmailPasswordViewController {
     
     func didSignUpSuccess() {
+        UserDefaults.standard.setValue(true, forKey: UserDefaultKey.loginStatus)
         let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CompleteVC") as! CompleteViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }

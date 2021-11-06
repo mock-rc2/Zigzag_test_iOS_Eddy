@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignUpEntity: Decodable{
+struct AuthEntity: Decodable{
     var isSuccess: Bool
     var code: Int
     var message: String

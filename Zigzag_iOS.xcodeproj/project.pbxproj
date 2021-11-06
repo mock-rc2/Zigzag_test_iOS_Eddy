@@ -34,6 +34,8 @@
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
 		2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E50F2736B54F0051BD3C /* CartViewController.swift */; };
 		2DC6E5132736B59E0051BD3C /* CartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */; };
+		2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */; };
+		2DC6E53A2736D24D0051BD3C /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5392736D24D0051BD3C /* AuthData.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -50,8 +52,8 @@
 		2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64E527316D8D0050DCF7 /* AdBannerCollectionViewCell.swift */; };
 		2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64E8273181530050DCF7 /* RecommendItemCollectionViewCell.swift */; };
 		2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */; };
-		2DED64F02732BDEA0050DCF7 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EF2732BDEA0050DCF7 /* SignUpEntity.swift */; };
-		2DED64F32732BE040050DCF7 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64F22732BE040050DCF7 /* SignUpRequest.swift */; };
+		2DED64F02732BDEA0050DCF7 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64EF2732BDEA0050DCF7 /* AuthEntity.swift */; };
+		2DED64F32732BE040050DCF7 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64F22732BE040050DCF7 /* AuthRequest.swift */; };
 		2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED65002733B9190050DCF7 /* DetailWebViewController.swift */; };
 		2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */; };
 		2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */; };
@@ -92,6 +94,8 @@
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2DC6E50F2736B54F0051BD3C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
+		2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
+		2DC6E5392736D24D0051BD3C /* AuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -108,8 +112,8 @@
 		2DED64E527316D8D0050DCF7 /* AdBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		2DED64E8273181530050DCF7 /* RecommendItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		2DED64EB273185D10050DCF7 /* HomeBasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicCollectionViewCell.swift; sourceTree = "<group>"; };
-		2DED64EF2732BDEA0050DCF7 /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
-		2DED64F22732BE040050DCF7 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		2DED64EF2732BDEA0050DCF7 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
+		2DED64F22732BE040050DCF7 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 		2DED65002733B9190050DCF7 /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				2D4C9E7B272D420E0069BB3B /* UIViewController.swift */,
 				2D4C9E7E272D421D0069BB3B /* UINavigationBar.swift */,
 				2DFD1F00272EEBD600E6EDD4 /* UITextField.swift */,
+				2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -313,19 +318,20 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2DED64EE2732BDC30050DCF7 /* SignUpAPI */ = {
+		2DED64EE2732BDC30050DCF7 /* AuthAPI */ = {
 			isa = PBXGroup;
 			children = (
-				2DED64EF2732BDEA0050DCF7 /* SignUpEntity.swift */,
-				2DED64F22732BE040050DCF7 /* SignUpRequest.swift */,
+				2DED64EF2732BDEA0050DCF7 /* AuthEntity.swift */,
+				2DED64F22732BE040050DCF7 /* AuthRequest.swift */,
+				2DC6E5392736D24D0051BD3C /* AuthData.swift */,
 			);
-			path = SignUpAPI;
+			path = AuthAPI;
 			sourceTree = "<group>";
 		};
 		2DFD1EFC272EDFBC00E6EDD4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2DED64EE2732BDC30050DCF7 /* SignUpAPI */,
+				2DED64EE2732BDC30050DCF7 /* AuthAPI */,
 				2DFD1EF4272EBEB400E6EDD4 /* LoginViewController.swift */,
 				2DFD1EF9272EDFA100E6EDD4 /* EmailLoginViewController.swift */,
 				2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */,
@@ -476,6 +482,7 @@
 			files = (
 				2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */,
 				2DED64DB273152FA0050DCF7 /* DeliveryTableViewCell.swift in Sources */,
+				2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
 				2DED64C927313FBA0050DCF7 /* BrandViewController.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
@@ -487,7 +494,7 @@
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
 				2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */,
-				2DED64F02732BDEA0050DCF7 /* SignUpEntity.swift in Sources */,
+				2DED64F02732BDEA0050DCF7 /* AuthEntity.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
 				2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */,
 				2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */,
@@ -504,8 +511,9 @@
 				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
 				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
 				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
+				2DC6E53A2736D24D0051BD3C /* AuthData.swift in Sources */,
 				2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */,
-				2DED64F32732BE040050DCF7 /* SignUpRequest.swift in Sources */,
+				2DED64F32732BE040050DCF7 /* AuthRequest.swift in Sources */,
 				2D4C9E4E272D18520069BB3B /* SceneDelegate.swift in Sources */,
 				2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */,
 				2D4C9E63272D1CD30069BB3B /* Constant.swift in Sources */,
