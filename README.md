@@ -46,3 +46,12 @@
 #### 개발 중 이슈 
 1. TableViewCell안의 CollectionViewCell을 클릭할 때 pushViewController로 넘어가고 싶었는데 안됨 -> Delegate 패턴으로 해결함
 2. Toolbar에서 BarButtonItem이 레이아웃이 뒤죽박죽으로 됨 -> 아직 해결 X
+
+## 2021-11-05 ~ 2021-11-06 (금, 토) 진행현황
+- Toolbar를 UIView로 바꿔서 구현
+- NavigationBar 수정
+- 로그인 API 연결
+- timer로 구현한 몇초뒤에 사라지는 View를 escaping closure를 통해 수정 구현(피드백 반영)
+
+#### 개발 중 이슈 
+1. 장바구니 버튼을 클릭했을때, 클릭이 안되는 문제 발생 -> NavigationBar를 구현할때, UIView안에 버튼들을 배치하고 그 UIView를 customView로 구현한 것이 문제여서 UIButton을 customView로 지정해서 각각 rightBarButtonItem으로 지정해줬더니 문제가 해결됨
