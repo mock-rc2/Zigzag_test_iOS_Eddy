@@ -25,6 +25,7 @@ class TabViewController: TabmanViewController {
     
     func setNavigationBar() {
         self.navigationController?.navigationBar.isTransparent = true
+        self.navigationController?.modalPresentationStyle = .fullScreen
         let logoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 80, height: 40))
         logoButton.setBackgroundImage(UIImage(named: "zigzaghomelogo"), for: .normal)
         let leftBarButton = UIBarButtonItem(customView: logoButton)
@@ -37,8 +38,7 @@ class TabViewController: TabmanViewController {
         searchBar.searchTextField.font = UIFont.systemFont(ofSize: 12)
         self.navigationItem.titleView = searchBar
         
-        // UIView를 오른쪽 customView에 연결
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: .plain, target: self, action: #selector(goToCart))
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.mainPink
     }
     
@@ -56,6 +56,12 @@ class TabViewController: TabmanViewController {
         bar.indicator.tintColor = .black
         bar.indicator.overscrollBehavior = .none
         addBar(bar, dataSource: self, at: .top)
+    }
+    
+    @objc func goToCart() {
+        let vc = UIStoryboard(name: "CartStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

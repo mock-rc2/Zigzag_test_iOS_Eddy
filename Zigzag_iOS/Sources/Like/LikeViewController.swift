@@ -17,6 +17,7 @@ class LikeViewController: UIViewController {
     
     func setNavigationBar() {
         self.navigationController?.navigationBar.isTransparent = true
+        self.navigationController?.modalPresentationStyle = .fullScreen
         
         let likeLabel = UILabel()
         likeLabel.text = "찜한 아이템"
@@ -26,45 +27,31 @@ class LikeViewController: UIViewController {
         let leftBarButton = UIBarButtonItem(customView: likeLabel)
         self.navigationItem.leftBarButtonItem = leftBarButton
         
-        let rightView = UIView()
-        rightView.frame = CGRect(x: 0, y: 0, width: 100, height: 35)
-        
         let classifyButton = UIButton(type: .system)
         classifyButton.setImage(UIImage(systemName: "list.bullet"), for: .normal)
         classifyButton.tintColor = .black
         
         let editButton = UIButton(type: .system)
-        editButton.setImage(UIImage(named: "scissor"), for: .normal)
+        editButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        editButton.setImage(UIImage(systemName: "scissors"), for: .normal)
         editButton.tintColor = .black
         
         let cartButton = UIButton(type: .system)
         cartButton.setImage(UIImage(systemName: "cart.fill"), for: .normal)
         cartButton.tintColor = .mainPink
+        cartButton.addTarget(self, action: #selector(goToCart), for: .touchUpInside)
         
-        rightView.addSubview(classifyButton)
-        rightView.addSubview(editButton)
-        rightView.addSubview(cartButton)
+        let classifyBarButtonItem = UIBarButtonItem(customView: classifyButton)
+        let editBarButtonItem = UIBarButtonItem(customView: editButton)
+        let cartBarButtonItem = UIBarButtonItem(customView: cartButton)
         
-        classifyButton.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
-            make.centerY.equalToSuperview()
-        }
-        
-        editButton.snp.makeConstraints { make in
-            make.leading.equalTo(classifyButton.snp.trailing).offset(15)
-            make.centerY.equalToSuperview()
-            make.width.equalTo(15)
-            make.height.equalTo(20)
-        }
-        
-        cartButton.snp.makeConstraints { make in
-            make.leading.equalTo(editButton.snp.trailing).offset(15)
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview()
-        }
-        
-        let rightItem = UIBarButtonItem(customView: rightView)
-        self.navigationItem.rightBarButtonItem = rightItem
+        self.navigationItem.rightBarButtonItems = [cartBarButtonItem, editBarButtonItem, classifyBarButtonItem]
+    }
+    
+    @objc func goToCart() {
+        let vc = UIStoryboard(name: "CartStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

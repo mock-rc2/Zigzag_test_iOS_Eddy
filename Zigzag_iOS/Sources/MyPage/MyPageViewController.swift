@@ -17,6 +17,7 @@ class MyPageViewController: UIViewController {
 
     func setNavigationBar() {
         self.navigationController?.navigationBar.isTransparent = true
+        self.navigationController?.modalPresentationStyle = .fullScreen
         
         let myPageLabel = UILabel()
         myPageLabel.text = "마이페이지"
@@ -26,9 +27,6 @@ class MyPageViewController: UIViewController {
         let leftBarButton = UIBarButtonItem(customView: myPageLabel)
         self.navigationItem.leftBarButtonItem = leftBarButton
         
-        let rightView = UIView()
-        rightView.frame = CGRect(x: 0, y: 0, width: 75, height: 35)
-        
         let noticeButton = UIButton(type: .system)
         noticeButton.setImage(UIImage(systemName: "bell"), for: .normal)
         noticeButton.tintColor = .black
@@ -36,22 +34,18 @@ class MyPageViewController: UIViewController {
         let cartButton = UIButton(type: .system)
         cartButton.setImage(UIImage(systemName: "cart.fill"), for: .normal)
         cartButton.tintColor = .mainPink
+        cartButton.addTarget(self, action: #selector(goToCart), for: .touchUpInside)
         
-        rightView.addSubview(noticeButton)
-        rightView.addSubview(cartButton)
-        
-        noticeButton.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
-            make.centerY.equalToSuperview()
-        }
-        
-        cartButton.snp.makeConstraints { make in
-            make.leading.equalTo(noticeButton.snp.trailing).offset(15)
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview()
-        }
-        
-        let rightItem = UIBarButtonItem(customView: rightView)
-        self.navigationItem.rightBarButtonItem = rightItem
+        let noticeBarButtonItem = UIBarButtonItem(customView: noticeButton)
+        let cartBarButtonItem = UIBarButtonItem(customView: cartButton)
+
+        self.navigationItem.rightBarButtonItems = [
+        cartBarButtonItem, noticeBarButtonItem]
+    }
+    
+    @objc func goToCart() {
+        let vc = UIStoryboard(name: "CartStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -32,6 +32,8 @@
 		2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */; };
 		2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */; };
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
+		2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E50F2736B54F0051BD3C /* CartViewController.swift */; };
+		2DC6E5132736B59E0051BD3C /* CartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -88,6 +90,8 @@
 		2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2DC6E50F2736B54F0051BD3C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 		2D4C9E61272D1C960069BB3B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2DC6E50E2736B5320051BD3C /* Cart */,
 				2D4C9E91272D5E150069BB3B /* Home */,
 				2D4C9E92272D5E1C0069BB3B /* Store */,
 				2D4C9E93272D5E360069BB3B /* Collect */,
@@ -273,6 +278,15 @@
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		2DC6E50E2736B5320051BD3C /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				2DC6E50F2736B54F0051BD3C /* CartViewController.swift */,
+				2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		2DED64C627313F500050DCF7 /* ExtraVC */ = {
@@ -399,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC6E5132736B59E0051BD3C /* CartStoryboard.storyboard in Resources */,
 				2D4C9E58272D18540069BB3B /* LaunchScreen.storyboard in Resources */,
 				2D4C9E55272D18540069BB3B /* Assets.xcassets in Resources */,
 				2D4C9EA7272D7FAD0069BB3B /* LikeStoryboard.storyboard in Resources */,
@@ -471,6 +486,7 @@
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
+				2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */,
 				2DED64F02732BDEA0050DCF7 /* SignUpEntity.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
 				2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */,
