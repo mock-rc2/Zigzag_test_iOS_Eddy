@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Dispatch
 
 class SetEmailPasswordViewController: UIViewController {
 
@@ -77,6 +78,12 @@ class SetEmailPasswordViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    func delayDismiss(_ closure: @escaping ()-> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+4) {
+            closure()
+        }
+    }
+    
     @IBAction func signUpButtonTap(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             AuthRequest().sendSignUpData(email: email, password: password, viewController: self)
@@ -91,6 +98,11 @@ extension SetEmailPasswordViewController {
         UserDefaults.standard.setValue(true, forKey: UserDefaultKey.loginStatus)
         let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CompleteVC") as! CompleteViewController
         self.navigationController?.pushViewController(vc, animated: true)
+
+        delayDismiss {
+            self.dismiss(animated: true, completion: nil)
+        }
+       
     }
     
     func didSignUpFailure(message: String) {
