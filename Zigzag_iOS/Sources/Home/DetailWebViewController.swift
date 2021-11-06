@@ -13,7 +13,6 @@ class DetailWebViewController: UIViewController {
     var popupWebView: WKWebView?
     var urlString: String? = "https://s.zigzag.kr/UnyvPHHH3R"
     static var navbarTitle: String?
-    @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var purchaseButton: UIButton!
     
 //    private let webToolBar: UIToolbar = {
@@ -36,7 +35,6 @@ class DetailWebViewController: UIViewController {
         view.backgroundColor = .white
         setNavigationBar()
         setPurchaseButton()
-        toolbar.sizeToFit()
         loadWeb()
         self.tabBarController?.tabBar.isHidden = true
     }
