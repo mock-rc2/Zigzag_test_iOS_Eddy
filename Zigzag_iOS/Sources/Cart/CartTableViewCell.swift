@@ -11,6 +11,7 @@ class CartTableViewCell: UITableViewCell {
 
     @IBOutlet weak var storeImageButton: UIButton!
     @IBOutlet weak var storeNameLabel: UIButton!
+    @IBOutlet weak var cartItemCheckButton: UIButton!
     @IBOutlet weak var cartItemImageView: UIImageView!
     @IBOutlet weak var cartItemTextView: UITextView!
     @IBOutlet weak var cartItemDeleteButton: UIButton!

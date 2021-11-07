@@ -378,6 +378,7 @@
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="addAnotherItemButton" destination="Mwh-1k-a9f" id="lhd-Xu-t7j"/>
+                                            <outlet property="cartItemCheckButton" destination="U4I-SU-1Ab" id="pHm-zO-dv5"/>
                                             <outlet property="cartItemDeleteButton" destination="zpd-Cv-wma" id="Dx5-AH-4qH"/>
                                             <outlet property="cartItemImageView" destination="IV0-Ie-agV" id="aQh-Hg-jHw"/>
                                             <outlet property="cartItemOptionLabel" destination="wBU-7f-BG9" id="6MR-UI-GS2"/>
@@ -460,7 +461,7 @@
                     </view>
                     <connections>
                         <outlet property="cartTableView" destination="n1i-cv-dYa" id="yTt-Fg-SWw"/>
-                        <outlet property="deleteAllItemButton" destination="ds7-Ap-9Xq" id="yQ5-nz-zdU"/>
+                        <outlet property="deleteSelectedItemButton" destination="ds7-Ap-9Xq" id="yQ5-nz-zdU"/>
                         <outlet property="goToPurchaseButton" destination="a1A-2X-t22" id="oIA-PN-iLs"/>
                         <outlet property="headerAllSelectButton" destination="TnY-XP-hdD" id="WFK-xL-4Sm"/>
                         <outlet property="realTotalPriceLabel" destination="02L-cR-RcX" id="VQE-28-gem"/>
