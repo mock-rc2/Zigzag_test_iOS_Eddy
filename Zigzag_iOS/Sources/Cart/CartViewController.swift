@@ -9,21 +9,40 @@ import UIKit
 
 class CartViewController: UIViewController {
 
+    @IBOutlet weak var cartTableView: UITableView!
+    @IBOutlet weak var headerAllSelectButton: UIButton!
+    @IBOutlet weak var deleteAllItemButton: UIButton!
+    @IBOutlet weak var totalItemPriceLabel: UILabel!
+    @IBOutlet weak var totalShippingPriceLabel: UILabel!
+    @IBOutlet weak var totalExpectedPriceLabel: UILabel!
+    @IBOutlet weak var realTotalPriceLabel: UILabel!
+    @IBOutlet weak var goToPurchaseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        setGoToPurchaseButton()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setGoToPurchaseButton() {
+        goToPurchaseButton.setBackgroundColor(UIColor.tertiarySystemFill, for: .disabled)
+        goToPurchaseButton.setBackgroundColor(UIColor.mainPink, for: .normal)
+        goToPurchaseButton.clipsToBounds = true
+        goToPurchaseButton.layer.cornerRadius = 18
+        goToPurchaseButton.isEnabled = false
     }
-    */
+}
 
+extension CartViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartTVC", for: indexPath) as? CartTableViewCell else { return UITableViewCell() }
+        
+        return cell
+    }
+    
+    
 }

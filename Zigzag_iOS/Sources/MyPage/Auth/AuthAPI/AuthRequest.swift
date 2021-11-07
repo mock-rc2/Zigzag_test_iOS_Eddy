@@ -57,7 +57,6 @@ class AuthRequest {
                 case .success(let response):
                     if response.isSuccess {
                         AuthData.jwtToken = response.result?.jwt
-                        print(AuthData.jwtToken)
                         viewController.didLoginSuccess()
                     } else {
                         viewController.didLoginFailure(message: response.message)
