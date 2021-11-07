@@ -55,3 +55,11 @@
 
 #### 개발 중 이슈 
 1. 장바구니 버튼을 클릭했을때, 클릭이 안되는 문제 발생 -> NavigationBar를 구현할때, UIView안에 버튼들을 배치하고 그 UIView를 customView로 구현한 것이 문제여서 UIButton을 customView로 지정해서 각각 rightBarButtonItem으로 지정해줬더니 문제가 해결됨
+
+## 2021-11-07 (일) 진행현황
+- 장바구니 View 구현
+- 장바구니의 전체 선택 버튼 구현
+- Home의 기본 상품을 보여주는 API 연결
+
+#### 개발 중 이슈 
+1. TableViewCell 안의 CollectionViewCell의 정보들을 수정해야했기 때문에 TableViewCell에서 API 연결을 하려고 했으나 그러면 셀의 개수만큼 API통신을 해야함 -> 결국 제일 상위의 ViewController에서 API 통신을 한 뒤, static한 List들을 만들어서 저장 후, TableViewCell에서 사용하여 해결
