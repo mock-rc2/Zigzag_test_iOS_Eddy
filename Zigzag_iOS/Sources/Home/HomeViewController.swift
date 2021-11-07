@@ -14,10 +14,14 @@ protocol CellToViewController {
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    static var storeNameList: [String] = []
+    static var productNameList: [String] = []
+    static var priceList: [Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        HomeRequest().getHomeBasicData(viewController: self)
     }
 
 }
@@ -45,7 +49,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellTo
         case 2:
             return 1
         case 3:
-            return 2
+            return 3
         default:
             return 0
         }
@@ -84,6 +88,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellTo
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeBasicTVC", for: indexPath) as? HomeBasicTableViewCell else { return UITableViewCell() }
             cell.cellToVCDelegate = self
+            cell.chapter = indexPath.row
             return cell
             
         default:
@@ -92,5 +97,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellTo
         
     }
     
+}
+
+extension HomeViewController {
+    func didSignUpSuccess(infoList: [HomeBasicItemInfo]) {
+        for i in 0..<7 {
+            HomeViewController.storeNameList.append(infoList[i].storeName)
+            HomeViewController.productNameList.append(infoList[i].productName)
+            HomeViewController.priceList.append(infoList[i].price)
+        }
+        tableView.reloadData()
+    }
     
+    func didSignUpFailure(message: String) {
+        presentBottomAlert(message: message)
+    }
 }

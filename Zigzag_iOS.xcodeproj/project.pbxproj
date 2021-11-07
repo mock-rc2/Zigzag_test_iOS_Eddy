@@ -37,6 +37,8 @@
 		2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */; };
 		2DC6E53A2736D24D0051BD3C /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5392736D24D0051BD3C /* AuthData.swift */; };
 		2DC6E53F2737B7510051BD3C /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E53E2737B7510051BD3C /* CartTableViewCell.swift */; };
+		2DC6E5432737FC1C0051BD3C /* HomeBasicEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5422737FC1C0051BD3C /* HomeBasicEntity.swift */; };
+		2DC6E5462737FFCA0051BD3C /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5452737FFCA0051BD3C /* HomeRequest.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -98,6 +100,8 @@
 		2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		2DC6E5392736D24D0051BD3C /* AuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		2DC6E53E2737B7510051BD3C /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		2DC6E5422737FC1C0051BD3C /* HomeBasicEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicEntity.swift; sourceTree = "<group>"; };
+		2DC6E5452737FFCA0051BD3C /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		2D4C9E91272D5E150069BB3B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2DC6E5412737FBF50051BD3C /* HomeAPI */,
 				2DED64D62731524A0050DCF7 /* Cell */,
 				2DED64C627313F500050DCF7 /* ExtraVC */,
 				2D4C9E9D272D7B320069BB3B /* HomeStoryboard.storyboard */,
@@ -295,6 +300,15 @@
 				2DC6E53E2737B7510051BD3C /* CartTableViewCell.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		2DC6E5412737FBF50051BD3C /* HomeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				2DC6E5422737FC1C0051BD3C /* HomeBasicEntity.swift */,
+				2DC6E5452737FFCA0051BD3C /* HomeRequest.swift */,
+			);
+			path = HomeAPI;
 			sourceTree = "<group>";
 		};
 		2DED64C627313F500050DCF7 /* ExtraVC */ = {
@@ -487,7 +501,9 @@
 				2DED64DB273152FA0050DCF7 /* DeliveryTableViewCell.swift in Sources */,
 				2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
+				2DC6E5432737FC1C0051BD3C /* HomeBasicEntity.swift in Sources */,
 				2DED64C927313FBA0050DCF7 /* BrandViewController.swift in Sources */,
+				2DC6E5462737FFCA0051BD3C /* HomeRequest.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
 				2DC6E53F2737B7510051BD3C /* CartTableViewCell.swift in Sources */,

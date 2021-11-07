@@ -12,6 +12,7 @@ class HomeBasicTableViewCell: UITableViewCell {
     @IBOutlet weak var homeBasicCollectionView: UICollectionView!
     
     var cellToVCDelegate: CellToViewController?
+    var chapter: Int = 0
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,11 +40,29 @@ extension HomeBasicTableViewCell: UICollectionViewDelegate, UICollectionViewData
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBasicCVC", for: indexPath) as? HomeBasicCollectionViewCell else { return UICollectionViewCell() }
         
         cell.basicImageView.image = UIImage(named: "zigzagsampleitem")
-        cell.basicTitleLabel.text = "리리앤코"
-        cell.basicDescriptionLabel.text = "텐딘 밴딩 와이드"
-        cell.basicPriceLabel.text = "24,120"
+            switch chapter {
+            case 0:
+                cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item]
+                cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item]
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item])"
+                return cell
+            case 1:
+                cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item + 2]
+                cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item + 2]
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 2])"
+                return cell
+            case 2:
+                cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item + 4]
+                cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item + 4]
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 4])"
+                return cell
+            default:
+                cell.basicTitleLabel.text = "리리앤코"
+                cell.basicDescriptionLabel.text = "텐딘 벤딩 와이드"
+                cell.basicPriceLabel.text = "24,120"
+                return cell
+            }
 
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
