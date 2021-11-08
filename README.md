@@ -63,3 +63,10 @@
 
 #### 개발 중 이슈 
 1. TableViewCell 안의 CollectionViewCell의 정보들을 수정해야했기 때문에 TableViewCell에서 API 연결을 하려고 했으나 그러면 셀의 개수만큼 API통신을 해야함 -> 결국 제일 상위의 ViewController에서 API 통신을 한 뒤, static한 List들을 만들어서 저장 후, TableViewCell에서 사용하여 해결
+
+## 2021-11-08 (월) 진행현황
+- 장바구니 Cell안의 버튼 선택 구현
+- 로그인 여부 확인할 수 있게 변경
+- Home의 배너 자동으로 스크롤될 수 있도록 구현
+- 결제 대략적인 UI 구현
+
