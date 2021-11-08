@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol UpdateVC {
+    func updateVC()
+}
+
 class CartViewController: UIViewController {
 
     @IBOutlet weak var cartTableView: UITableView!
@@ -61,7 +65,22 @@ class CartViewController: UIViewController {
     }
 }
 
-extension CartViewController: UITableViewDelegate, UITableViewDataSource {
+extension CartViewController: UITableViewDelegate, UITableViewDataSource, UpdateVC {
+    
+    func updateVC() {
+        if !headerAllSelectButton.isSelected {
+            headerAllSelectButton.isSelected = true
+            headerAllSelectButton.tintColor = .mainPink
+            goToPurchaseButton.isEnabled = true
+            cartTableView.reloadData()
+        } else {
+            headerAllSelectButton.isSelected = false
+            headerAllSelectButton.tintColor = .tertiaryLabel
+            goToPurchaseButton.isEnabled = false
+            cartTableView.reloadData()
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -76,7 +95,7 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
             cell.cartItemCheckButton.isSelected = false
             cell.cartItemCheckButton.tintColor = .tertiaryLabel
         }
-        
+        cell.updateVCDelegate = self
         return cell
     }
     

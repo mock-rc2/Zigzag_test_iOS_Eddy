@@ -8,6 +8,9 @@
 import UIKit
 
 class CartTableViewCell: UITableViewCell {
+    
+    var updateVCDelegate: UpdateVC?
+    var numValue: Int = 0
 
     @IBOutlet weak var storeImageButton: UIButton!
     @IBOutlet weak var storeNameLabel: UIButton!
@@ -29,6 +32,7 @@ class CartTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setButtonUI()
         setSeparator()
+        setButtonTarget()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -44,6 +48,7 @@ class CartTableViewCell: UITableViewCell {
         numOfItemButton.layer.cornerRadius = 10
         numOfItemButton.layer.borderWidth = 2
         numOfItemButton.layer.borderColor = UIColor.tertiarySystemGroupedBackground.cgColor
+        numOfItemButton.setTitle("\(numValue)", for: .normal)
         plusNumButton.clipsToBounds = true
         plusNumButton.layer.cornerRadius = 11
         purchaseButton.clipsToBounds = true
@@ -64,6 +69,40 @@ class CartTableViewCell: UITableViewCell {
         self.addSubview(additionalSeparator)
     }
 
+    func setButtonTarget() {
+        [cartItemCheckButton, minusNumButton, plusNumButton].forEach {
+            $0.addTarget(self, action: #selector(buttonTapAction(_:)), for: .touchUpInside)
+        }
+    }
     
+    @objc
+    private func buttonTapAction(_ sender: UIButton) {
+        switch sender {
+        case cartItemCheckButton:
+            if !sender.isSelected {
+                sender.isSelected = true
+                sender.tintColor = .mainPink
+                self.updateVCDelegate?.updateVC()
+            } else {
+                sender.isSelected = false
+                sender.tintColor = .tertiaryLabel
+                self.updateVCDelegate?.updateVC()
+            }
+        case minusNumButton:
+            if numValue <= 1 {
+                return
+            } else {
+                numValue -= 1
+                numOfItemButton.setTitle("\(numValue)", for: .normal)
+            }
+        case plusNumButton:
+            numValue += 1
+            numOfItemButton.setTitle("\(numValue)", for: .normal)
+            
+        default:
+            return
+        }
+        
+    }
 
 }
