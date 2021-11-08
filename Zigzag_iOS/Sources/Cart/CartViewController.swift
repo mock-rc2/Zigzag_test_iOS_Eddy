@@ -24,8 +24,22 @@ class CartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         setGoToPurchaseButton()
         setButtonTarget()
+    }
+    
+    func setNavigationBar() {
+        self.navigationController?.navigationBar.isTransparent = true
+        
+        let leftButton = UIButton()
+        leftButton.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        leftButton.tintColor = .black
+        leftButton.addTarget(self, action: #selector(backToPrevious), for: .touchUpInside)
+        let leftBarButton = UIBarButtonItem(customView: leftButton)
+        self.navigationItem.leftBarButtonItem = leftBarButton
+        self.navigationItem.title = "장바구니"
+        self.navigationController?.modalPresentationStyle = .fullScreen
     }
     
     func setGoToPurchaseButton() {
@@ -37,9 +51,18 @@ class CartViewController: UIViewController {
     }
     
     func setButtonTarget() {
-        [headerAllSelectButton, goToPurchaseButton].forEach {
+        [headerAllSelectButton].forEach {
             $0.addTarget(self, action: #selector(buttonTapAction(_:)), for: .touchUpInside)
         }
+    }
+    
+    @objc func backToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func purchaseButtonTap(_ sender: Any) {
+        let vc = UIStoryboard(name: "CartStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PurchaseVC") as! PurchaseViewController
+        self.navigationController?.present(vc, animated: true, completion: nil)
     }
     
     @objc
@@ -58,7 +81,6 @@ class CartViewController: UIViewController {
                 cartTableView.reloadData()
             }
         default:
-            
             return
         }
         

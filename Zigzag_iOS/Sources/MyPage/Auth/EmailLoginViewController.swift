@@ -99,7 +99,7 @@ class EmailLoginViewController: UIViewController {
 extension EmailLoginViewController {
     
     func didLoginSuccess() {
-        UserDefaults.standard.setValue(true, forKey: UserDefaultKey.loginStatus)
+        AuthData.isLogin = true
         dismiss(animated: true, completion: nil)
     }
     

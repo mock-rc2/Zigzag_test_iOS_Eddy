@@ -15,8 +15,8 @@ class MyPageViewController: UIViewController {
         setNavigationBar()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if status {
+    override func viewWillAppear(_ animated: Bool) {
+        if AuthData.isLogin {
             authOrInfoButton.setTitle("회원님의 정보", for: .normal)
         } else{
             authOrInfoButton.setTitle("로그인/회원가입", for: .normal)
@@ -25,7 +25,6 @@ class MyPageViewController: UIViewController {
     
     @IBOutlet weak var authOrInfoButton: UIButton!
     
-    let status = UserDefaults.standard.bool(forKey: UserDefaultKey.loginStatus)
 
     func setNavigationBar() {
         self.navigationController?.navigationBar.isTransparent = true
