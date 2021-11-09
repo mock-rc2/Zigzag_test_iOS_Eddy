@@ -9,9 +9,12 @@ import UIKit
 
 class UsePointCell: UITableViewCell {
 
+    @IBOutlet weak var useAllPointButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setSeparator()
+        setUseAllPointButton()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,4 +31,8 @@ class UsePointCell: UITableViewCell {
         self.addSubview(additionalSeparator)
     }
 
+    func setUseAllPointButton() {
+        useAllPointButton.clipsToBounds = true
+        useAllPointButton.layer.cornerRadius = 15
+    }
 }

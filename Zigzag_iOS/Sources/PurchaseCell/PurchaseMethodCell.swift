@@ -9,9 +9,16 @@ import UIKit
 
 class PurchaseMethodCell: UITableViewCell {
 
+    @IBOutlet weak var simplePayButton: UIButton!
+    @IBOutlet weak var creditCheckCardButton: UIButton!
+    @IBOutlet weak var phonePayButton: UIButton!
+    @IBOutlet weak var mooTongChangButton: UIButton!
+    @IBOutlet weak var againUseMethodButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setSeparator()
+        setButtons()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,5 +34,35 @@ class PurchaseMethodCell: UITableViewCell {
         additionalSeparator.backgroundColor = UIColor.tertiarySystemGroupedBackground
         self.addSubview(additionalSeparator)
     }
+    
+    func setButtons() {
+        simplePayButton.clipsToBounds = true
+        creditCheckCardButton.clipsToBounds = true
+        phonePayButton.clipsToBounds = true
+        mooTongChangButton.clipsToBounds = true
+        simplePayButton.layer.borderWidth = 2
+        creditCheckCardButton.layer.borderWidth = 2
+        phonePayButton.layer.borderWidth = 2
+        mooTongChangButton.layer.borderWidth = 2
+        simplePayButton.layer.borderColor = UIColor.mainPink.cgColor
+        simplePayButton.setTitleColor(.mainPink, for: .normal)
+        simplePayButton.layer.cornerRadius = 17.5
+        creditCheckCardButton.layer.cornerRadius = 17.5
+        phonePayButton.layer.cornerRadius = 17.5
+        mooTongChangButton.layer.cornerRadius = 17.5
+        creditCheckCardButton.layer.borderColor = UIColor.tertiarySystemGroupedBackground.cgColor
+        phonePayButton.layer.borderColor = UIColor.tertiarySystemGroupedBackground.cgColor
+        mooTongChangButton.layer.borderColor = UIColor.tertiarySystemGroupedBackground.cgColor
+    }
 
+    @IBAction func againUseMethodButtonTap(_ sender: Any) {
+        if !againUseMethodButton.isSelected {
+            againUseMethodButton.isSelected = true
+            againUseMethodButton.tintColor = .mainPink
+        } else {
+            againUseMethodButton.isSelected = false
+            againUseMethodButton.tintColor = .tertiaryLabel
+        }
+        
+    }
 }

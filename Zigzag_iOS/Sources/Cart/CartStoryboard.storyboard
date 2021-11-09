@@ -592,6 +592,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="N8Y-dc-AtN" secondAttribute="trailing" constant="20" id="z5S-QH-hdj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="storeImageView" destination="OSR-Q6-s1x" id="fTD-dZ-wLM"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UseCouponCell" rowHeight="90" id="GKd-MS-Xbp" customClass="UseCouponCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="233" width="414" height="90"/>
@@ -714,6 +717,9 @@
                                                 <constraint firstItem="qi3-n1-pxm" firstAttribute="top" secondItem="L4m-I2-IL5" secondAttribute="bottom" constant="15" id="xdD-5U-JH5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="useAllPointButton" destination="I99-tP-ueW" id="FTQ-JT-zbf"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PurchasePriceCell" rowHeight="220" id="wSu-OR-Ghw" customClass="PurchasePriceCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="483" width="414" height="220"/>
@@ -1051,6 +1057,10 @@
                                                 <constraint firstItem="Zqe-NK-Uiw" firstAttribute="top" secondItem="Ph9-63-UKD" secondAttribute="bottom" id="zoj-iJ-3P1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="findPostNumberButton" destination="0Q5-91-Dnh" id="IHE-Uw-h7r"/>
+                                            <outlet property="recentDestinationButton" destination="IDa-fp-awW" id="t94-EP-Uqj"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PurchaseMethodCell" rowHeight="210" id="FQf-xd-w1S" customClass="PurchaseMethodCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1053" width="414" height="210"/>
@@ -1079,7 +1089,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="계좌간편결제">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" systemColor="systemPinkColor"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17D-un-9si">
@@ -1132,6 +1142,9 @@
                                                     <state key="normal" image="checkmark.circle.fill" catalog="system">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="againUseMethodButtonTap:" destination="FQf-xd-w1S" eventType="touchUpInside" id="v3v-Zz-yf2"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 결제수단을 다음에도 사용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4na-p0-Ohv">
                                                     <rect key="frame" x="50" y="165" width="146" height="16"/>
@@ -1163,6 +1176,13 @@
                                                 <constraint firstItem="W29-31-xAl" firstAttribute="top" secondItem="AQ0-zm-14S" secondAttribute="bottom" constant="5" id="zW8-75-KgJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="againUseMethodButton" destination="pBL-f0-HKN" id="LHg-xZ-ND3"/>
+                                            <outlet property="creditCheckCardButton" destination="17D-un-9si" id="A7s-je-uU3"/>
+                                            <outlet property="mooTongChangButton" destination="KvM-hE-Jie" id="YMr-aQ-1JC"/>
+                                            <outlet property="phonePayButton" destination="W29-31-xAl" id="h4R-PO-dWs"/>
+                                            <outlet property="simplePayButton" destination="AQ0-zm-14S" id="xdo-jW-umF"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TermOfPurchaseCell" rowHeight="580" id="X6e-gI-7NN" customClass="TermOfPurchaseCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1263" width="414" height="580"/>
@@ -1524,7 +1544,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="tSn-jy-mdj"/>
                                                     </constraints>
-                                                    <state key="normal" title="결제하기"/>
+                                                    <state key="normal" title="결제하기">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1592,6 +1614,18 @@
                                                 <constraint firstItem="0O2-KO-RLD" firstAttribute="top" secondItem="twb-Wq-lib" secondAttribute="bottom" id="zgb-Ko-53G"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="agreeOver14Button" destination="gLS-vb-aMS" id="pM4-Hk-ZJE"/>
+                                            <outlet property="agreeTermOfServiceButton" destination="3RE-zk-aGx" id="Oby-5U-G1R"/>
+                                            <outlet property="confirmOrderButton" destination="CoR-2N-0iG" id="IOu-Qn-Xah"/>
+                                            <outlet property="orderSubButton1" destination="BI3-cT-cXf" id="Jba-C5-6V2"/>
+                                            <outlet property="orderSubButton2" destination="ZV3-OP-wun" id="II7-2T-MuC"/>
+                                            <outlet property="orderSubButton3" destination="4tT-R6-NAi" id="7m5-i7-gvV"/>
+                                            <outlet property="orderSubButton4" destination="UwH-ke-kfi" id="0jw-xp-ehe"/>
+                                            <outlet property="realPurchaseButton" destination="FHb-zQ-qBI" id="dqO-cY-cU3"/>
+                                            <outlet property="serviceSubButton1" destination="isA-aq-CCV" id="BiW-1f-4kf"/>
+                                            <outlet property="serviceSubButton2" destination="TZc-sC-Wrn" id="akE-uk-rSo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
