@@ -32,6 +32,8 @@
 		2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */; };
 		2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */; };
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
+		2D6CA9D8273AB77300B0F45B /* StoreTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */; };
+		2D6CA9DB273AB7E500B0F45B /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */; };
 		2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E50F2736B54F0051BD3C /* CartViewController.swift */; };
 		2DC6E5132736B59E0051BD3C /* CartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */; };
 		2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */; };
@@ -103,6 +105,8 @@
 		2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB5272D80E00069BB3B /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabViewController.swift; sourceTree = "<group>"; };
+		2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
 		2DC6E50F2736B54F0051BD3C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
 		2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 			children = (
 				2D4C9EA0272D7B4A0069BB3B /* StoreStoryboard.storyboard */,
 				2D4C9EAF272D80CD0069BB3B /* StoreViewController.swift */,
+				2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */,
+				2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
 				2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */,
 				2DED64D3273141DA0050DCF7 /* HomeViewController.swift in Sources */,
+				2D6CA9DB273AB7E500B0F45B /* BookMarkViewController.swift in Sources */,
 				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
 				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
 				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
@@ -579,6 +586,7 @@
 				2DC6E555273970D20051BD3C /* PurchaseItemCell.swift in Sources */,
 				2DED64CD27313FC70050DCF7 /* BestViewController.swift in Sources */,
 				2D4C9E73272D41E20069BB3B /* Color.swift in Sources */,
+				2D6CA9D8273AB77300B0F45B /* StoreTabViewController.swift in Sources */,
 				2D4C9E82272D43010069BB3B /* IndicatorView.swift in Sources */,
 				2D4C9E7F272D421D0069BB3B /* UINavigationBar.swift in Sources */,
 				2DED64AF273024490050DCF7 /* CompleteViewController.swift in Sources */,
