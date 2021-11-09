@@ -11,7 +11,7 @@ import Alamofire
 
 class HomeRequest {
     func getHomeBasicData(viewController: HomeViewController) {
-        let url = "http://52.78.116.129:9000/app/products/home"
+        let url = "https://rczigzag.shop/app/products/home"
         
         AF.request(url,
                    method: .get,

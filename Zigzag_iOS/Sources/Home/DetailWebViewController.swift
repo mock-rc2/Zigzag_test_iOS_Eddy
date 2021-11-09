@@ -12,23 +12,8 @@ class DetailWebViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     var popupWebView: WKWebView?
     var urlString: String? = "https://s.zigzag.kr/UnyvPHHH3R"
-    static var navbarTitle: String?
     @IBOutlet weak var purchaseButton: UIButton!
     
-//    private let webToolBar: UIToolbar = {
-//        let toolbar = UIToolbar()
-//        toolbar.backgroundColor = .white
-//        toolbar.sizeToFit()
-//        return toolbar
-//    }()
-
-//    override func loadView() {
-//        super.loadView()
-//        webView = WKWebView(frame: view.frame)
-//        if let webview = webView {
-//            view = webview
-//        }
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,31 +51,16 @@ class DetailWebViewController: UIViewController {
         self.navigationController?.navigationBar.isTransparent = true
         
         let backButton = UIButton(type: .system)
-        backButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+        backButton.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
         backButton.tintColor = .black
         backButton.addTarget(self, action: #selector(backButtonTap), for: .touchUpInside)
         
-        let storeImgButton = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        storeImgButton.setImage(UIImage(systemName: "house.fill"), for: .normal)
-        storeImgButton.tintColor = .lightGray
-        storeImgButton.imageView?.contentMode = .scaleAspectFill
-        
-        let storeButton = UIButton(type: .system)
-        storeButton.setTitle(DetailWebViewController.navbarTitle, for: .normal)
-        storeButton.setTitleColor(.black, for: .normal)
-        storeButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        
-        let starButton = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        starButton.setImage(UIImage(systemName: "star"), for: .normal)
-        starButton.setImage(UIImage(systemName: "star.fill"), for: .selected)
-        starButton.tintColor = .black
-        
         let backBarButtonItem = UIBarButtonItem(customView: backButton)
-        let storeImgBarButtonItem = UIBarButtonItem(customView: storeImgButton)
-        let storeBarButtonItem = UIBarButtonItem(customView: storeButton)
-        let starBarButtonItem = UIBarButtonItem(customView: starButton)
-        self.navigationItem.leftBarButtonItems = [
-            backBarButtonItem, storeImgBarButtonItem, storeBarButtonItem, starBarButtonItem]
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+        
+        let zigzagButton = UIButton(type: .system)
+        zigzagButton.setImage(UIImage(systemName: "z.circle"), for: .normal)
+        zigzagButton.tintColor = .black
         
         let searchButton = UIButton(type: .system)
         searchButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
@@ -100,9 +70,10 @@ class DetailWebViewController: UIViewController {
         cartButton.setImage(UIImage(systemName: "cart.fill"), for: .normal)
         cartButton.tintColor = .mainPink
         
+        let zigzagBarButtonItem = UIBarButtonItem(customView: zigzagButton)
         let searchBarButtonItem = UIBarButtonItem(customView: searchButton)
         let cartBarButtonItem = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItems = [cartBarButtonItem, searchBarButtonItem]
+        self.navigationItem.rightBarButtonItems = [cartBarButtonItem, searchBarButtonItem, zigzagBarButtonItem]
     }
     
     func setPurchaseButton() {

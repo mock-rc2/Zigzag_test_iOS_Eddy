@@ -66,7 +66,7 @@ extension HomeBasicTableViewCell: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.cellToVCDelegate?.pushVC(data: "쇼핑몰 이름")
+        self.cellToVCDelegate?.pushVC()
     }
     
 }

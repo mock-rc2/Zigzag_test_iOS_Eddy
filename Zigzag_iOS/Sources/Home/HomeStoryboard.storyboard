@@ -437,36 +437,10 @@
                                             <constraint firstAttribute="height" constant="30" id="mOH-ok-H3R"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cV-Me-7g7">
-                                        <rect key="frame" x="75" y="20" width="120" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghv-Bv-Arw">
-                                                <rect key="frame" x="5" y="7" width="28" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                <color key="textColor" systemColor="systemPinkColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34,400원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAb-FW-gAG">
-                                                <rect key="frame" x="36" y="7" width="58" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="ghv-Bv-Arw" firstAttribute="centerY" secondItem="0cV-Me-7g7" secondAttribute="centerY" id="9TL-vB-AR5"/>
-                                            <constraint firstAttribute="width" constant="120" id="AYF-2O-HpJ"/>
-                                            <constraint firstItem="pAb-FW-gAG" firstAttribute="centerY" secondItem="0cV-Me-7g7" secondAttribute="centerY" id="DYS-cs-LoM"/>
-                                            <constraint firstItem="ghv-Bv-Arw" firstAttribute="leading" secondItem="0cV-Me-7g7" secondAttribute="leading" constant="5" id="IKZ-Ds-kQy"/>
-                                            <constraint firstAttribute="height" constant="30" id="ZL0-tC-DeS"/>
-                                            <constraint firstItem="pAb-FW-gAG" firstAttribute="leading" secondItem="ghv-Bv-Arw" secondAttribute="trailing" constant="3" id="yy3-CL-gYv"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbt-Mb-d0X">
-                                        <rect key="frame" x="264" y="12.5" width="130" height="45"/>
+                                        <rect key="frame" x="154" y="12.5" width="240" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="tkW-Nl-a0N"/>
+                                            <constraint firstAttribute="width" constant="240" id="tkW-Nl-a0N"/>
                                             <constraint firstAttribute="height" constant="45" id="uAC-r0-bjz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -474,16 +448,31 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W83-4f-00f">
+                                        <rect key="frame" x="65" y="25" width="1" height="30"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="62E-7S-P6q"/>
+                                            <constraint firstAttribute="width" constant="1" id="pkn-Q8-qKC"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-IB-q1J">
+                                        <rect key="frame" x="86" y="29" width="21" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="heart" catalog="system"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="kbt-Mb-d0X" firstAttribute="centerY" secondItem="zRw-QE-2rJ" secondAttribute="centerY" id="09q-jD-fuR"/>
-                                    <constraint firstItem="0cV-Me-7g7" firstAttribute="leading" secondItem="ehl-Gv-GdM" secondAttribute="trailing" constant="10" id="8f1-0h-3gP"/>
+                                    <constraint firstItem="jY1-IB-q1J" firstAttribute="centerY" secondItem="W83-4f-00f" secondAttribute="centerY" id="GeS-zL-8sQ"/>
                                     <constraint firstItem="ehl-Gv-GdM" firstAttribute="leading" secondItem="zRw-QE-2rJ" secondAttribute="leading" constant="15" id="HDR-c7-Ppx"/>
                                     <constraint firstAttribute="height" constant="70" id="K1W-TD-VRO"/>
+                                    <constraint firstItem="jY1-IB-q1J" firstAttribute="leading" secondItem="W83-4f-00f" secondAttribute="trailing" constant="20" id="K24-pz-hcw"/>
+                                    <constraint firstItem="W83-4f-00f" firstAttribute="top" secondItem="zRw-QE-2rJ" secondAttribute="top" constant="25" id="MeG-Kn-FGG"/>
                                     <constraint firstItem="ehl-Gv-GdM" firstAttribute="centerY" secondItem="zRw-QE-2rJ" secondAttribute="centerY" id="OzE-6s-E42"/>
+                                    <constraint firstItem="W83-4f-00f" firstAttribute="leading" secondItem="ehl-Gv-GdM" secondAttribute="trailing" id="VGr-Ym-eep"/>
                                     <constraint firstAttribute="trailing" secondItem="kbt-Mb-d0X" secondAttribute="trailing" constant="20" id="a0R-S9-Yg1"/>
-                                    <constraint firstItem="0cV-Me-7g7" firstAttribute="centerY" secondItem="zRw-QE-2rJ" secondAttribute="centerY" id="eOg-7A-JWe"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -542,11 +531,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
