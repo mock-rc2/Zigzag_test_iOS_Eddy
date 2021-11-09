@@ -34,6 +34,11 @@
 		2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */; };
 		2D6CA9D8273AB77300B0F45B /* StoreTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */; };
 		2D6CA9DB273AB7E500B0F45B /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */; };
+		2D6CA9E0273AD93D00B0F45B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9DF273AD93D00B0F45B /* CategoryTableViewCell.swift */; };
+		2D6CA9E4273ADB8400B0F45B /* BigBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9E3273ADB8400B0F45B /* BigBannerTableViewCell.swift */; };
+		2D6CA9E7273ADBB400B0F45B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9E6273ADBB400B0F45B /* CategoryCollectionViewCell.swift */; };
+		2D6CA9EA273AE8C000B0F45B /* BannerSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9E9273AE8C000B0F45B /* BannerSectionHeaderView.swift */; };
+		2D6CA9EE273AEBDC00B0F45B /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CA9ED273AEBDC00B0F45B /* CategoryInfo.swift */; };
 		2DC6E5102736B54F0051BD3C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E50F2736B54F0051BD3C /* CartViewController.swift */; };
 		2DC6E5132736B59E0051BD3C /* CartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */; };
 		2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */; };
@@ -107,6 +112,11 @@
 		2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabViewController.swift; sourceTree = "<group>"; };
 		2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		2D6CA9DF273AD93D00B0F45B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		2D6CA9E3273ADB8400B0F45B /* BigBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBannerTableViewCell.swift; sourceTree = "<group>"; };
+		2D6CA9E6273ADBB400B0F45B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D6CA9E9273AE8C000B0F45B /* BannerSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerSectionHeaderView.swift; sourceTree = "<group>"; };
+		2D6CA9ED273AEBDC00B0F45B /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		2DC6E50F2736B54F0051BD3C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		2DC6E5122736B59E0051BD3C /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
 		2DC6E5342736D0670051BD3C /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
@@ -290,8 +300,11 @@
 		2D4C9E93272D5E360069BB3B /* Collect */ = {
 			isa = PBXGroup;
 			children = (
+				2D6CA9DE273AD91300B0F45B /* Cell */,
 				2D4C9EA3272D7F970069BB3B /* CollectStoryboard.storyboard */,
 				2D4C9EB2272D80D70069BB3B /* CollectViewController.swift */,
+				2D6CA9E9273AE8C000B0F45B /* BannerSectionHeaderView.swift */,
+				2D6CA9ED273AEBDC00B0F45B /* CategoryInfo.swift */,
 			);
 			path = Collect;
 			sourceTree = "<group>";
@@ -313,6 +326,16 @@
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		2D6CA9DE273AD91300B0F45B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D6CA9DF273AD93D00B0F45B /* CategoryTableViewCell.swift */,
+				2D6CA9E3273ADB8400B0F45B /* BigBannerTableViewCell.swift */,
+				2D6CA9E6273ADBB400B0F45B /* CategoryCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2DC6E50E2736B5320051BD3C /* Cart */ = {
@@ -537,6 +560,7 @@
 			files = (
 				2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */,
 				2DED64DB273152FA0050DCF7 /* DeliveryTableViewCell.swift in Sources */,
+				2D6CA9E4273ADB8400B0F45B /* BigBannerTableViewCell.swift in Sources */,
 				2DC6E5352736D0670051BD3C /* UserDefaultKey.swift in Sources */,
 				2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */,
 				2DC6E5432737FC1C0051BD3C /* HomeBasicEntity.swift in Sources */,
@@ -545,6 +569,7 @@
 				2DC6E5462737FFCA0051BD3C /* HomeRequest.swift in Sources */,
 				2D4C9E89272D4ACA0069BB3B /* BaseViewController.swift in Sources */,
 				2D4C9EB9272D80EA0069BB3B /* MyPageViewController.swift in Sources */,
+				2D6CA9EE273AEBDC00B0F45B /* CategoryInfo.swift in Sources */,
 				2DC6E53F2737B7510051BD3C /* CartTableViewCell.swift in Sources */,
 				2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */,
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
@@ -561,6 +586,7 @@
 				2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */,
 				2DED64E0273153750050DCF7 /* RecommendItemTableViewCell.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,
+				2D6CA9EA273AE8C000B0F45B /* BannerSectionHeaderView.swift in Sources */,
 				2DC6E55127395F480051BD3C /* PurchaseViewController.swift in Sources */,
 				2DC6E55B2739711B0051BD3C /* UsePointCell.swift in Sources */,
 				2DC6E566273972B80051BD3C /* PurchaseMethodCell.swift in Sources */,
@@ -568,12 +594,14 @@
 				2D4C9E70272D41D60069BB3B /* String.swift in Sources */,
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
 				2DC6E558273970F50051BD3C /* UseCouponCell.swift in Sources */,
+				2D6CA9E7273ADBB400B0F45B /* CategoryCollectionViewCell.swift in Sources */,
 				2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
 				2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */,
 				2DED64D3273141DA0050DCF7 /* HomeViewController.swift in Sources */,
 				2D6CA9DB273AB7E500B0F45B /* BookMarkViewController.swift in Sources */,
+				2D6CA9E0273AD93D00B0F45B /* CategoryTableViewCell.swift in Sources */,
 				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
 				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
 				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
