@@ -100,6 +100,7 @@ extension EmailLoginViewController {
     
     func didLoginSuccess() {
         AuthData.isLogin = true
+        AuthData.email = emailTextField.text
         dismiss(animated: true, completion: nil)
     }
     

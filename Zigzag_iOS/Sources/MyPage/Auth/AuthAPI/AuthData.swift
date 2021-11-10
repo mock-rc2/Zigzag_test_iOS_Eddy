@@ -10,4 +10,6 @@ import Foundation
 struct AuthData {
     static var jwtToken: String?
     static var isLogin: Bool = false
+    static var email: String?
+    static var userIdx: Int?
 }

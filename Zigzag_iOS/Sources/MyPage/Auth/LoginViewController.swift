@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        setNavigationBar()
         setLogoImageView()
         setKakaoLoginButton()
         setAppleLoginButton()
@@ -42,6 +43,18 @@ class LoginViewController: UIViewController {
     @IBAction func signUpBottomSheetButton(_ sender: Any) {
         let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "SignUpBottonSheetVC") as! SignUpBottonSheetViewController
         presentPanModal(vc)
+    }
+    
+    func setNavigationBar() {
+        self.navigationController?.navigationBar.isTransparent = true
+        
+        let leftButton = UIButton()
+        leftButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+        leftButton.tintColor = .black
+        leftButton.addTarget(self, action: #selector(backToPrevious), for: .touchUpInside)
+        let leftBarButton = UIBarButtonItem(customView: leftButton)
+        self.navigationItem.leftBarButtonItem = leftBarButton
+        self.navigationController?.modalPresentationStyle = .fullScreen
     }
     
     func setLogoImageView() {
@@ -68,6 +81,10 @@ class LoginViewController: UIViewController {
         emailLoginButton.clipsToBounds = true
         emailLoginButton.layer.cornerRadius = 20
         emailLoginButton.setBackgroundColor(.tertiarySystemGroupedBackground, for: .normal)
+    }
+    
+    @objc func backToPrevious() {
+        dismiss(animated: true, completion: nil)
     }
     
 }
