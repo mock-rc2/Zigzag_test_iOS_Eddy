@@ -18,10 +18,16 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var styleButton: UIButton!
     @IBOutlet weak var ageButton: UIButton!
     
+    var storeNameList: [String] = []
+    var styleList: [String] = []
+    var likeNumList: [Int] = []
+    var maxCouponPriceList: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setButtonUI()
+        StoreRequest().getShoppingMallData(viewController: self)
     }
     
     func setButtonUI() {
@@ -51,14 +57,45 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoreRankingCell", for: indexPath) as? StoreRankingCell else { return UITableViewCell()
         }
-        cell.rankingNumLabel.text = "1"
+        cell.rankingNumLabel.text = "\(indexPath.row + 1)"
         cell.storeImageView.image = UIImage(named: "66girls")
-        cell.storeNameLabel.text = "육육걸즈"
-        cell.storeCategoryLabel.text = "심플베이직 러블리"
-        cell.maxCouponLabel.text = "최대 5,000원 쿠폰"
-        cell.bookmarkNumLabel.text = "1"
+        
+        if storeNameList.count != 0 {
+            cell.storeNameLabel.text = storeNameList[indexPath.row]
+            cell.storeCategoryLabel.text = styleList[indexPath.row]
+            cell.maxCouponLabel.text = "최대 \(maxCouponPriceList[indexPath.row])원 쿠폰"
+            cell.bookmarkNumLabel.text = "\(likeNumList[indexPath.row])"
+        } else {
+            cell.storeNameLabel.text = "육육걸즈"
+            cell.storeCategoryLabel.text = "심플베이직 러블리"
+            cell.maxCouponLabel.text = "최대 5,000원 쿠폰"
+            cell.bookmarkNumLabel.text = "1"
+        }
         
         return cell
     }
     
+}
+
+extension StoreViewController {
+    func didShoppingMallAPISuccess(infoList: [StoreRankingInfo]) {
+        for i in 0..<5 {
+            storeNameList.append(infoList[i].storeName)
+            
+            if infoList[i].style.count == 2 {
+                let styles: String = infoList[i].style[0] + " " + infoList[i].style[1]
+                styleList.append(styles)
+            } else {
+                styleList.append(infoList[i].style[0])
+            }
+                        
+            likeNumList.append(infoList[i].likeNum)
+            maxCouponPriceList.append(infoList[i].maxCouponPrice)
+        }
+        storeTableView.reloadData()
+    }
+    
+    func didShoppingMallAPIFailure(message: String) {
+        presentBottomAlert(message: message)
+    }
 }
