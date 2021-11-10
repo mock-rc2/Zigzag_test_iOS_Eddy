@@ -65,6 +65,7 @@
 		2DD3CA4A273BFFDE0040205D /* CouponTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA49273BFFDE0040205D /* CouponTapViewController.swift */; };
 		2DD3CA4D273C00300040205D /* ExpireCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA4C273C002F0040205D /* ExpireCouponViewController.swift */; };
 		2DD3CA50273C122C0040205D /* RecommendEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA4F273C122C0040205D /* RecommendEntity.swift */; };
+		2DD3CA5A273C244A0040205D /* StoreRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA59273C244A0040205D /* StoreRankingCell.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -154,6 +155,7 @@
 		2DD3CA49273BFFDE0040205D /* CouponTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTapViewController.swift; sourceTree = "<group>"; };
 		2DD3CA4C273C002F0040205D /* ExpireCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireCouponViewController.swift; sourceTree = "<group>"; };
 		2DD3CA4F273C122C0040205D /* RecommendEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendEntity.swift; sourceTree = "<group>"; };
+		2DD3CA59273C244A0040205D /* StoreRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRankingCell.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				2D4C9EAF272D80CD0069BB3B /* StoreViewController.swift */,
 				2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */,
 				2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */,
+				2DD3CA59273C244A0040205D /* StoreRankingCell.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				2DFD1F01272EEBD600E6EDD4 /* UITextField.swift in Sources */,
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
 				2DED64D027313FCD0050DCF7 /* SaleViewController.swift in Sources */,
+				2DD3CA5A273C244A0040205D /* StoreRankingCell.swift in Sources */,
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
 				2DD3CA37273BFC400040205D /* OrderViewController.swift in Sources */,
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
