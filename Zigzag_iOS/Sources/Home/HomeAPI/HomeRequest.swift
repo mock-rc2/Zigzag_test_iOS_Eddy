@@ -21,9 +21,32 @@ class HomeRequest {
                 switch response.result {
                 case .success(let response):
                     if response.isSuccess {
-                        viewController.didSignUpSuccess(infoList: response.result)
+                        viewController.didHomeBaseAPISuccess(infoList: response.result)
                     } else {
-                        viewController.didSignUpFailure(message: response.message)
+                        viewController.didHomeBaseAPIFailure(message: response.message)
+                    }
+//                    print(response)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+
+        }
+    }
+    
+    func getRecommendData(viewController: HomeViewController) {
+        let url = "https://rczigzag.shop/app/products/recommended-products"
+        
+        AF.request(url,
+                   method: .get,
+                   headers: nil)
+            .responseDecodable(of: RecommendEntity.self) { response in
+            
+                switch response.result {
+                case .success(let response):
+                    if response.isSuccess {
+                        viewController.didRecommendAPISuccess(infoList: response.result)
+                    } else {
+                        viewController.didRecommendAPIFailure(message: response.message)
                     }
                     print(response)
                 case .failure(let error):

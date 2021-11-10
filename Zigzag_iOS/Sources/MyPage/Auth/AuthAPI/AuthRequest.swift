@@ -10,7 +10,7 @@ import UIKit
 
 class AuthRequest {
     func sendSignUpData(email: String, password: String, viewController: SetEmailPasswordViewController) {
-        let url = "http://52.78.116.129:9000/app/users"
+        let url = "https://rczigzag.shop/app/users"
         let params: Parameters = [
             "email": "\(email)",
             "password": "\(password)"
@@ -40,7 +40,7 @@ class AuthRequest {
     }
     
     func sendLoginData(email: String, password: String, viewController: EmailLoginViewController) {
-        let url = "http://52.78.116.129:9000/app/users/logIn"
+        let url = "https://rczigzag.shop/app/users/logIn"
         let params: Parameters = [
             "email": "\(email)",
             "password": "\(password)"

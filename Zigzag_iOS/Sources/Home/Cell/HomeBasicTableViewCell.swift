@@ -44,17 +44,17 @@ extension HomeBasicTableViewCell: UICollectionViewDelegate, UICollectionViewData
             case 0:
                 cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item]
                 cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item]
-                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item])"
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item])".insertComma
                 return cell
             case 1:
                 cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item + 2]
                 cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item + 2]
-                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 2])"
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 2])".insertComma
                 return cell
             case 2:
                 cell.basicTitleLabel.text = HomeViewController.storeNameList[indexPath.item + 4]
                 cell.basicDescriptionLabel.text = HomeViewController.productNameList[indexPath.item + 4]
-                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 4])"
+                cell.basicPriceLabel.text = "\(HomeViewController.priceList[indexPath.item + 4])".insertComma
                 return cell
             default:
                 cell.basicTitleLabel.text = "리리앤코"

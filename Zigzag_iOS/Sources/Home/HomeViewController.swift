@@ -18,9 +18,14 @@ class HomeViewController: UIViewController {
     static var productNameList: [String] = []
     static var priceList: [Int] = []
     
+    static var recommendStoreNameList: [String] = []
+    static var recommendProductNameList: [String] = []
+    static var recommendPriceList: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        HomeRequest().getRecommendData(viewController: self)
         HomeRequest().getHomeBasicData(viewController: self)
     }
 
@@ -82,6 +87,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellTo
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendItemTVC", for: indexPath) as? RecommendItemTableViewCell else { return UITableViewCell() }
             cell.cellToVCDelegate = self
+            cell.recommendCollectionView.reloadData()
             return cell
             
         case 3:
@@ -99,8 +105,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, CellTo
 }
 
 extension HomeViewController {
-    func didSignUpSuccess(infoList: [HomeBasicItemInfo]) {
-        for i in 0..<7 {
+    func didHomeBaseAPISuccess(infoList: [HomeBasicItemInfo]) {
+        for i in 0..<6 {
             HomeViewController.storeNameList.append(infoList[i].storeName)
             HomeViewController.productNameList.append(infoList[i].productName)
             HomeViewController.priceList.append(infoList[i].price)
@@ -108,7 +114,20 @@ extension HomeViewController {
         tableView.reloadData()
     }
     
-    func didSignUpFailure(message: String) {
+    func didHomeBaseAPIFailure(message: String) {
+        presentBottomAlert(message: message)
+    }
+    
+    func didRecommendAPISuccess(infoList: [RecommendItemInfo]) {
+        for i in 0..<3 {
+            HomeViewController.recommendStoreNameList.append(infoList[i].storeName)
+            HomeViewController.recommendProductNameList.append(infoList[i].productName)
+            HomeViewController.recommendPriceList.append(infoList[i].price)
+        }
+        tableView.reloadData()
+    }
+    
+    func didRecommendAPIFailure(message: String) {
         presentBottomAlert(message: message)
     }
 }

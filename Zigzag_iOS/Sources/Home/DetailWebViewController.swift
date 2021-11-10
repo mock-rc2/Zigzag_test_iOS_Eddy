@@ -11,7 +11,7 @@ import WebKit
 class DetailWebViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     var popupWebView: WKWebView?
-    var urlString: String? = "https://s.zigzag.kr/UnyvPHHH3R"
+    var urlString: String? = "https://66girls.co.kr/product/%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1-%ED%8F%AC%EA%B7%BC%EC%9A%B8%EC%86%8C%EB%A7%A4%EB%B2%84%ED%8A%BCcd/118702/category/50/display/1/"
     @IBOutlet weak var purchaseButton: UIButton!
     
 

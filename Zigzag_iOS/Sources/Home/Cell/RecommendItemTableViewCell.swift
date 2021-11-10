@@ -37,10 +37,19 @@ extension RecommendItemTableViewCell: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendItemCVC", for: indexPath) as? RecommendItemCollectionViewCell else { return UICollectionViewCell() }
-        cell.itemImageView.image = UIImage(named: "zigzagsampleitem")
-        cell.itemTitleLabel.text = "리리앤코"
-        cell.itemDescriptionLabel.text = "텐딘 밴딩 와이드"
-        cell.itemPriceLabel.text = "24,120"
+        if HomeViewController.recommendPriceList.count != 0 {
+            cell.itemImageView.image = UIImage(named: "zigzagsampleitem")
+            cell.itemTitleLabel.text =
+                HomeViewController.recommendStoreNameList[indexPath.item]
+            cell.itemDescriptionLabel.text =         HomeViewController.recommendProductNameList[indexPath.item]
+            cell.itemPriceLabel.text = "\(HomeViewController.recommendPriceList[indexPath.item])".insertComma
+        } else {
+            cell.itemImageView.image = UIImage(named: "zigzagsampleitem")
+            cell.itemTitleLabel.text = "리리앤코"
+            cell.itemDescriptionLabel.text = "텐딘 벤딩 와이드"
+            cell.itemPriceLabel.text = "24,120"
+        }
+        
 
         return cell
     }
