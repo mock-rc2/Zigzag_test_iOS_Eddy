@@ -56,6 +56,14 @@
 		2DC6E56C273973470051BD3C /* TermOfPurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6E56B273973470051BD3C /* TermOfPurchaseCell.swift */; };
 		2DD3CA27273BA85E0040205D /* MyPageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA26273BA85D0040205D /* MyPageHeaderView.swift */; };
 		2DD3CA2A273BAD310040205D /* MyPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA29273BAD310040205D /* MyPageCell.swift */; };
+		2DD3CA37273BFC400040205D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA36273BFC400040205D /* OrderViewController.swift */; };
+		2DD3CA3B273BFC6E0040205D /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA3A273BFC6E0040205D /* ReviewViewController.swift */; };
+		2DD3CA3E273BFC7D0040205D /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA3D273BFC7D0040205D /* CouponViewController.swift */; };
+		2DD3CA41273BFC850040205D /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA40273BFC850040205D /* PointViewController.swift */; };
+		2DD3CA44273BFF900040205D /* AlreadyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA43273BFF900040205D /* AlreadyReviewViewController.swift */; };
+		2DD3CA47273BFFA70040205D /* ReviewTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA46273BFFA70040205D /* ReviewTabViewController.swift */; };
+		2DD3CA4A273BFFDE0040205D /* CouponTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA49273BFFDE0040205D /* CouponTapViewController.swift */; };
+		2DD3CA4D273C00300040205D /* ExpireCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA4C273C002F0040205D /* ExpireCouponViewController.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -136,6 +144,14 @@
 		2DC6E56B273973470051BD3C /* TermOfPurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfPurchaseCell.swift; sourceTree = "<group>"; };
 		2DD3CA26273BA85D0040205D /* MyPageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageHeaderView.swift; sourceTree = "<group>"; };
 		2DD3CA29273BAD310040205D /* MyPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCell.swift; sourceTree = "<group>"; };
+		2DD3CA36273BFC400040205D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		2DD3CA3A273BFC6E0040205D /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		2DD3CA3D273BFC7D0040205D /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		2DD3CA40273BFC850040205D /* PointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
+		2DD3CA43273BFF900040205D /* AlreadyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyReviewViewController.swift; sourceTree = "<group>"; };
+		2DD3CA46273BFFA70040205D /* ReviewTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTabViewController.swift; sourceTree = "<group>"; };
+		2DD3CA49273BFFDE0040205D /* CouponTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTapViewController.swift; sourceTree = "<group>"; };
+		2DD3CA4C273C002F0040205D /* ExpireCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireCouponViewController.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -325,6 +341,7 @@
 		2D4C9E95272D5E510069BB3B /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				2DD3CA35273BFBD50040205D /* ExtraVC */,
 				2DFD1EFC272EDFBC00E6EDD4 /* Auth */,
 				2D4C9EA9272D7FD30069BB3B /* MyPageStoryboard.storyboard */,
 				2DD3CA29273BAD310040205D /* MyPageCell.swift */,
@@ -376,6 +393,21 @@
 				2DC6E56B273973470051BD3C /* TermOfPurchaseCell.swift */,
 			);
 			path = PurchaseCell;
+			sourceTree = "<group>";
+		};
+		2DD3CA35273BFBD50040205D /* ExtraVC */ = {
+			isa = PBXGroup;
+			children = (
+				2DD3CA36273BFC400040205D /* OrderViewController.swift */,
+				2DD3CA3D273BFC7D0040205D /* CouponViewController.swift */,
+				2DD3CA40273BFC850040205D /* PointViewController.swift */,
+				2DD3CA3A273BFC6E0040205D /* ReviewViewController.swift */,
+				2DD3CA43273BFF900040205D /* AlreadyReviewViewController.swift */,
+				2DD3CA46273BFFA70040205D /* ReviewTabViewController.swift */,
+				2DD3CA49273BFFDE0040205D /* CouponTapViewController.swift */,
+				2DD3CA4C273C002F0040205D /* ExpireCouponViewController.swift */,
+			);
+			path = ExtraVC;
 			sourceTree = "<group>";
 		};
 		2DED64C627313F500050DCF7 /* ExtraVC */ = {
@@ -581,6 +613,7 @@
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
 				2DED64D027313FCD0050DCF7 /* SaleViewController.swift in Sources */,
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
+				2DD3CA37273BFC400040205D /* OrderViewController.swift in Sources */,
 				2DFD1EFA272EDFA100E6EDD4 /* EmailLoginViewController.swift in Sources */,
 				2DC6E5632739716E0051BD3C /* DestinationCell.swift in Sources */,
 				2D4C9E7C272D420E0069BB3B /* UIViewController.swift in Sources */,
@@ -588,8 +621,10 @@
 				2DED64F02732BDEA0050DCF7 /* AuthEntity.swift in Sources */,
 				2DC6E5602739715B0051BD3C /* PurchasePriceCell.swift in Sources */,
 				2D4C9E86272D43140069BB3B /* Device.swift in Sources */,
+				2DD3CA44273BFF900040205D /* AlreadyReviewViewController.swift in Sources */,
 				2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */,
 				2DED64E9273181530050DCF7 /* RecommendItemCollectionViewCell.swift in Sources */,
+				2DD3CA41273BFC850040205D /* PointViewController.swift in Sources */,
 				2DED64E0273153750050DCF7 /* RecommendItemTableViewCell.swift in Sources */,
 				2D4C9EB0272D80CD0069BB3B /* StoreViewController.swift in Sources */,
 				2D6CA9EA273AE8C000B0F45B /* BannerSectionHeaderView.swift in Sources */,
@@ -601,8 +636,11 @@
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
 				2DC6E558273970F50051BD3C /* UseCouponCell.swift in Sources */,
 				2D6CA9E7273ADBB400B0F45B /* CategoryCollectionViewCell.swift in Sources */,
+				2DD3CA47273BFFA70040205D /* ReviewTabViewController.swift in Sources */,
+				2DD3CA3B273BFC6E0040205D /* ReviewViewController.swift in Sources */,
 				2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
+				2DD3CA4D273C00300040205D /* ExpireCouponViewController.swift in Sources */,
 				2D4C9EB6272D80E00069BB3B /* LikeViewController.swift in Sources */,
 				2DED64EC273185D10050DCF7 /* HomeBasicCollectionViewCell.swift in Sources */,
 				2DED64D3273141DA0050DCF7 /* HomeViewController.swift in Sources */,
@@ -611,6 +649,7 @@
 				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
 				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
 				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
+				2DD3CA4A273BFFDE0040205D /* CouponTapViewController.swift in Sources */,
 				2DC6E53A2736D24D0051BD3C /* AuthData.swift in Sources */,
 				2DED64AC27301F410050DCF7 /* SetEmailPasswordViewController.swift in Sources */,
 				2DED64F32732BE040050DCF7 /* AuthRequest.swift in Sources */,
@@ -619,6 +658,7 @@
 				2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */,
 				2D4C9E63272D1CD30069BB3B /* Constant.swift in Sources */,
 				2DC6E555273970D20051BD3C /* PurchaseItemCell.swift in Sources */,
+				2DD3CA3E273BFC7D0040205D /* CouponViewController.swift in Sources */,
 				2DED64CD27313FC70050DCF7 /* BestViewController.swift in Sources */,
 				2D4C9E73272D41E20069BB3B /* Color.swift in Sources */,
 				2D6CA9D8273AB77300B0F45B /* StoreTabViewController.swift in Sources */,
