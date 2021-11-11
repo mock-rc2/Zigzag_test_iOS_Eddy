@@ -33,10 +33,8 @@ class CouponTabViewController: TabmanViewController {
         let leftBarButton = UIBarButtonItem(customView: leftButton)
         self.navigationItem.title = "쿠폰"
         self.navigationItem.leftBarButtonItem = leftBarButton
-        let rightButton = UIButton()
-        rightButton.setTitle("등록", for: .normal)
-        rightButton.tintColor = .black
-        let rightBarButton = UIBarButtonItem(customView: rightButton)
+        let rightBarButton = UIBarButtonItem(title: "등록", style: .plain, target: self, action: #selector(goToRegister))
+        rightBarButton.tintColor = .black
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
@@ -58,6 +56,10 @@ class CouponTabViewController: TabmanViewController {
     
     @objc func backToPrevious() {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func goToRegister() {
+        navigationController?.pushViewController(RegisterCouponViewController(), animated: true)
     }
     
 }

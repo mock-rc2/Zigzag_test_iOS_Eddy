@@ -23,7 +23,7 @@ class PointViewController: UIViewController {
         leftButton.tintColor = .black
         leftButton.addTarget(self, action: #selector(backToPrevious), for: .touchUpInside)
         let leftBarButton = UIBarButtonItem(customView: leftButton)
-        self.navigationItem.title = "쿠폰"
+        self.navigationItem.title = "포인트"
         self.navigationItem.leftBarButtonItem = leftBarButton
     }
 

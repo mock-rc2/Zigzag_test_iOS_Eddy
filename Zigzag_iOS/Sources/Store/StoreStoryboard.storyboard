@@ -242,6 +242,100 @@
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="2.6785714285714284"/>
         </scene>
+        <!--Book Mark View Controller-->
+        <scene sceneID="GpK-1q-l0h">
+            <objects>
+                <viewController storyboardIdentifier="BookMarkViewController" id="wsP-za-Dek" customClass="BookMarkViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7j8-Gc-ccI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tUa-fm-pg1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="nXB-Gz-OCN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39J-li-Moz">
+                                            <rect key="frame" x="20" y="7.5" width="42" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnI-U3-d2M">
+                                            <rect key="frame" x="70" y="7.5" width="8" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="PnI-U3-d2M" firstAttribute="leading" secondItem="39J-li-Moz" secondAttribute="trailing" constant="8" symbolic="YES" id="9L1-uJ-iGm"/>
+                                        <constraint firstItem="39J-li-Moz" firstAttribute="centerY" secondItem="nXB-Gz-OCN" secondAttribute="centerY" id="Ars-95-HtM"/>
+                                        <constraint firstItem="PnI-U3-d2M" firstAttribute="centerY" secondItem="39J-li-Moz" secondAttribute="centerY" id="OP2-Uv-wNz"/>
+                                        <constraint firstItem="39J-li-Moz" firstAttribute="leading" secondItem="nXB-Gz-OCN" secondAttribute="leading" constant="20" id="Rkb-bM-gBm"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookMarkCell" rowHeight="80" id="iDs-kg-Jbw" customClass="BookMarkCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iDs-kg-Jbw" id="W6E-UI-Oap">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HWP-tp-2LK">
+                                                    <rect key="frame" x="20" y="17.5" width="45" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="nVl-yM-Mtn"/>
+                                                        <constraint firstAttribute="width" constant="45" id="psi-ze-YbZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="육육걸즈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rET-N7-0fU">
+                                                    <rect key="frame" x="80" y="31" width="52" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rET-N7-0fU" firstAttribute="leading" secondItem="HWP-tp-2LK" secondAttribute="trailing" constant="15" id="U8E-Nf-5eA"/>
+                                                <constraint firstItem="HWP-tp-2LK" firstAttribute="leading" secondItem="W6E-UI-Oap" secondAttribute="leading" constant="20" id="e8q-Tq-D9R"/>
+                                                <constraint firstItem="HWP-tp-2LK" firstAttribute="centerY" secondItem="W6E-UI-Oap" secondAttribute="centerY" id="gCK-jt-oV6"/>
+                                                <constraint firstItem="rET-N7-0fU" firstAttribute="centerY" secondItem="HWP-tp-2LK" secondAttribute="centerY" id="vgO-IV-NAN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookmarkStoreImageView" destination="HWP-tp-2LK" id="3zZ-q7-6QN"/>
+                                            <outlet property="bookmarkStoreNameLabel" destination="rET-N7-0fU" id="sXD-nE-fh7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wsP-za-Dek" id="A9i-if-DZl"/>
+                                    <outlet property="delegate" destination="wsP-za-Dek" id="8HT-DQ-XZg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QY6-4X-P6R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tUa-fm-pg1" firstAttribute="leading" secondItem="QY6-4X-P6R" secondAttribute="leading" id="GWA-Yt-3NK"/>
+                            <constraint firstItem="QY6-4X-P6R" firstAttribute="bottom" secondItem="tUa-fm-pg1" secondAttribute="bottom" id="Nhy-WN-EK4"/>
+                            <constraint firstItem="tUa-fm-pg1" firstAttribute="top" secondItem="QY6-4X-P6R" secondAttribute="top" id="wwV-pZ-VOF"/>
+                            <constraint firstItem="QY6-4X-P6R" firstAttribute="trailing" secondItem="tUa-fm-pg1" secondAttribute="trailing" id="ye0-Z4-Nax"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numOfCellLabel" destination="PnI-U3-d2M" id="iK8-7j-iWB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIc-E2-oCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="3"/>
+        </scene>
         <!--스토어-->
         <scene sceneID="6bQ-fs-hVt">
             <objects>

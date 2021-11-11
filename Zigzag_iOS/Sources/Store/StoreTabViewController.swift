@@ -12,7 +12,7 @@ import Pageboy
 class StoreTabViewController: TabmanViewController {
 
     private let menuList: [String] = ["랭킹", "즐겨찾기"]
-    private var viewControllers = [UIStoryboard(name: "StoreStoryboard", bundle: nil).instantiateViewController(withIdentifier: "StoreViewController") as! StoreViewController, BookMarkViewController()]
+    private var viewControllers = [UIStoryboard(name: "StoreStoryboard", bundle: nil).instantiateViewController(withIdentifier: "StoreViewController") as! StoreViewController, UIStoryboard(name: "StoreStoryboard", bundle: nil).instantiateViewController(withIdentifier: "BookMarkViewController") as! BookMarkViewController]
 
     
     override func viewDidLoad() {
