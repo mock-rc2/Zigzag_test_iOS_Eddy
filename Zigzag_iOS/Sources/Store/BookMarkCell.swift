@@ -14,11 +14,17 @@ class BookMarkCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setImageView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func setImageView() {
+        bookmarkStoreImageView.layer.masksToBounds = true
+        bookmarkStoreImageView.layer.cornerRadius = 22.5
     }
 
 }
