@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     static var storeNameList: [String] = []
     static var productNameList: [String] = []
     static var priceList: [Int] = []
+    static var productUrlImage: [String] = []
     
     static var recommendStoreNameList: [String] = []
     static var recommendProductNameList: [String] = []
@@ -110,6 +111,7 @@ extension HomeViewController {
             HomeViewController.storeNameList.append(infoList[i].storeName)
             HomeViewController.productNameList.append(infoList[i].productName)
             HomeViewController.priceList.append(infoList[i].price)
+            HomeViewController.productUrlImage.append(infoList[i].productImg![0])
         }
         tableView.reloadData()
     }

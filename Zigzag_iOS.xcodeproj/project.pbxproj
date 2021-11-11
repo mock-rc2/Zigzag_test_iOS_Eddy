@@ -71,6 +71,7 @@
 		2DD3CA64273CF1D40040205D /* BrandEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA63273CF1D40040205D /* BrandEntity.swift */; };
 		2DD3CA70273D06970040205D /* RegisterCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA6F273D06970040205D /* RegisterCouponViewController.swift */; };
 		2DD3CA73273D106C0040205D /* BookMarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA72273D106C0040205D /* BookMarkCell.swift */; };
+		2DD3CA76273D27940040205D /* BrandRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA75273D27940040205D /* BrandRankingCell.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -166,6 +167,7 @@
 		2DD3CA63273CF1D40040205D /* BrandEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandEntity.swift; sourceTree = "<group>"; };
 		2DD3CA6F273D06970040205D /* RegisterCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCouponViewController.swift; sourceTree = "<group>"; };
 		2DD3CA72273D106C0040205D /* BookMarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkCell.swift; sourceTree = "<group>"; };
+		2DD3CA75273D27940040205D /* BrandRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRankingCell.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				2DD3CA5C273C32740040205D /* StoreAPI */,
 				2D4C9EA0272D7B4A0069BB3B /* StoreStoryboard.storyboard */,
 				2D4C9EAF272D80CD0069BB3B /* StoreViewController.swift */,
+				2DD3CA75273D27940040205D /* BrandRankingCell.swift */,
 				2D6CA9D7273AB77300B0F45B /* StoreTabViewController.swift */,
 				2D6CA9DA273AB7E500B0F45B /* BookMarkViewController.swift */,
 				2DD3CA59273C244A0040205D /* StoreRankingCell.swift */,
@@ -683,6 +686,7 @@
 				2D6CA9DB273AB7E500B0F45B /* BookMarkViewController.swift in Sources */,
 				2D6CA9E0273AD93D00B0F45B /* CategoryTableViewCell.swift in Sources */,
 				2DED64E32731539C0050DCF7 /* HomeBasicTableViewCell.swift in Sources */,
+				2DD3CA76273D27940040205D /* BrandRankingCell.swift in Sources */,
 				2DED64D82731528F0050DCF7 /* AdBannerTableViewCell.swift in Sources */,
 				2DED64E627316D8D0050DCF7 /* AdBannerCollectionViewCell.swift in Sources */,
 				2DD3CA4A273BFFDE0040205D /* CouponTapViewController.swift in Sources */,

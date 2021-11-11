@@ -177,6 +177,7 @@
                                                     </constraints>
                                                     <color key="tintColor" systemColor="systemPinkColor"/>
                                                     <state key="normal" image="star" catalog="system"/>
+                                                    <state key="selected" image="star.fill" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-kX-zCz">
                                                     <rect key="frame" x="382.5" y="43" width="5" height="12"/>
@@ -210,6 +211,88 @@
                                             <outlet property="storeCategoryLabel" destination="Ygt-74-DAj" id="eI3-gA-3c3"/>
                                             <outlet property="storeImageView" destination="YUa-hk-Hk2" id="lLi-8V-Rjt"/>
                                             <outlet property="storeNameLabel" destination="d6I-f6-Yrx" id="Oa4-Af-9U5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BrandRankingCell" rowHeight="80" id="G0W-8g-evH" customClass="BrandRankingCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="198" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G0W-8g-evH" id="yAZ-ll-oSp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-lC-Vxq">
+                                                    <rect key="frame" x="20" y="31" width="7" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myB-bG-58i">
+                                                    <rect key="frame" x="37" y="17.5" width="45" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="Gsr-O7-3iJ"/>
+                                                        <constraint firstAttribute="width" constant="45" id="omU-we-ztL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="육육걸즈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-bx-U00">
+                                                    <rect key="frame" x="96" y="11.5" width="52" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심플베이직 러블리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-6a-YTC">
+                                                    <rect key="frame" x="96" y="32.5" width="87" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최대 1,000원 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-H7-VLp">
+                                                    <rect key="frame" x="96" y="51.5" width="85" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                    <color key="textColor" systemColor="systemIndigoColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vj-zI-J94">
+                                                    <rect key="frame" x="376" y="20" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="0JB-Oi-PU9"/>
+                                                        <constraint firstAttribute="width" constant="18" id="AS6-l4-ZtP"/>
+                                                    </constraints>
+                                                    <color key="tintColor" systemColor="systemPinkColor"/>
+                                                    <state key="normal" image="star" catalog="system"/>
+                                                    <state key="selected" image="star.fill" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4Q-mv-xrp">
+                                                    <rect key="frame" x="382.5" y="43" width="5" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6vj-zI-J94" secondAttribute="trailing" constant="20" id="29J-Gp-TZs"/>
+                                                <constraint firstItem="myB-bG-58i" firstAttribute="leading" secondItem="SCK-lC-Vxq" secondAttribute="trailing" constant="10" id="582-za-4MH"/>
+                                                <constraint firstItem="V4Q-mv-xrp" firstAttribute="centerX" secondItem="6vj-zI-J94" secondAttribute="centerX" id="Ck1-gy-fVM"/>
+                                                <constraint firstItem="h9M-6a-YTC" firstAttribute="centerY" secondItem="yAZ-ll-oSp" secondAttribute="centerY" id="DOV-qW-9Nh"/>
+                                                <constraint firstItem="8rL-bx-U00" firstAttribute="leading" secondItem="myB-bG-58i" secondAttribute="trailing" constant="14" id="Iqz-gT-eoc"/>
+                                                <constraint firstItem="suT-H7-VLp" firstAttribute="top" secondItem="h9M-6a-YTC" secondAttribute="bottom" constant="4" id="NY7-cL-8xj"/>
+                                                <constraint firstItem="myB-bG-58i" firstAttribute="centerY" secondItem="yAZ-ll-oSp" secondAttribute="centerY" id="OBL-kL-3zk"/>
+                                                <constraint firstItem="V4Q-mv-xrp" firstAttribute="top" secondItem="6vj-zI-J94" secondAttribute="bottom" constant="5" id="TNm-G0-lqN"/>
+                                                <constraint firstItem="h9M-6a-YTC" firstAttribute="top" secondItem="8rL-bx-U00" secondAttribute="bottom" constant="3" id="VHk-0Z-p7N"/>
+                                                <constraint firstItem="h9M-6a-YTC" firstAttribute="leading" secondItem="myB-bG-58i" secondAttribute="trailing" constant="14" id="b3h-B0-xQG"/>
+                                                <constraint firstItem="6vj-zI-J94" firstAttribute="top" secondItem="yAZ-ll-oSp" secondAttribute="top" constant="20" id="fs2-FE-J73"/>
+                                                <constraint firstItem="SCK-lC-Vxq" firstAttribute="centerY" secondItem="yAZ-ll-oSp" secondAttribute="centerY" id="hy9-hB-Pxj"/>
+                                                <constraint firstItem="SCK-lC-Vxq" firstAttribute="leading" secondItem="yAZ-ll-oSp" secondAttribute="leading" constant="20" symbolic="YES" id="jkT-MV-a3p"/>
+                                                <constraint firstItem="suT-H7-VLp" firstAttribute="leading" secondItem="myB-bG-58i" secondAttribute="trailing" constant="14" id="qbV-gZ-xAS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookmarkButton" destination="6vj-zI-J94" id="Hnv-Ce-ZK2"/>
+                                            <outlet property="bookmarkNumLabel" destination="V4Q-mv-xrp" id="oRz-mB-Kjg"/>
+                                            <outlet property="brandCategoryLabel" destination="h9M-6a-YTC" id="I0E-K8-i2X"/>
+                                            <outlet property="brandImageView" destination="myB-bG-58i" id="ibU-NE-fNv"/>
+                                            <outlet property="brandMaxCouponLabel" destination="suT-H7-VLp" id="EFU-Je-7vW"/>
+                                            <outlet property="brandNameLabel" destination="8rL-bx-U00" id="Q71-bL-RcC"/>
+                                            <outlet property="brandRankingNumLabel" destination="SCK-lC-Vxq" id="SjK-uc-CwH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -363,6 +446,7 @@
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="pin.fill" catalog="system" width="119" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

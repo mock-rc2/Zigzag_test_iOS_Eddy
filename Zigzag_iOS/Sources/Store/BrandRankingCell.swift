@@ -1,5 +1,5 @@
 //
-//  StoreRankingCell.swift
+//  BrandRankingCell.swift
 //  Zigzag_iOS
 //
 //  Created by 권준상 on 2021/11/11.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class StoreRankingCell: UITableViewCell {
+class BrandRankingCell: UITableViewCell {
 
-    @IBOutlet weak var rankingNumLabel: UILabel!
-    @IBOutlet weak var storeImageView: UIImageView!
-    @IBOutlet weak var storeNameLabel: UILabel!
-    @IBOutlet weak var storeCategoryLabel: UILabel!
-    @IBOutlet weak var maxCouponLabel: UILabel!
+    @IBOutlet weak var brandRankingNumLabel: UILabel!
+    @IBOutlet weak var brandImageView: UIImageView!
+    @IBOutlet weak var brandNameLabel: UILabel!
+    @IBOutlet weak var brandCategoryLabel: UILabel!
+    @IBOutlet weak var brandMaxCouponLabel: UILabel!
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var bookmarkNumLabel: UILabel!
     
@@ -34,8 +34,8 @@ class StoreRankingCell: UITableViewCell {
     }
     
     func setImageView() {
-        storeImageView.layer.masksToBounds = true
-        storeImageView.layer.cornerRadius = 22.5
+        brandImageView.layer.masksToBounds = true
+        brandImageView.layer.cornerRadius = 22.5
     }
     
     @objc

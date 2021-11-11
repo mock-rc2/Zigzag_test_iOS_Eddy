@@ -8,6 +8,11 @@
 import UIKit
 import SnapKit
 
+protocol BookMarkButtonProtocol {
+    func enterBookmark()
+    func deleteBookmark()
+}
+
 class StoreViewController: UIViewController {
 
     @IBOutlet weak var storeTableView: UITableView!
@@ -22,11 +27,16 @@ class StoreViewController: UIViewController {
     var smStyleList: [String] = []
     var smLikeNumList: [Int] = []
     var smMaxCouponPriceList: [Int] = []
+    var smUrlImage: [String] = []
     
     var brandStoreNameList: [String] = []
     var brandCategoryList: [String] = []
     var brandLikeNumList: [Int] = []
     var brandMaxCouponPriceList: [Int] = []
+    var brandUrlImage: [String] = []
+    
+    var shoppingMallBookMarkTap: [Bool] = [false, false, false, false, false]
+    var brandBookMarkTap: [Bool] = [false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +74,15 @@ class StoreViewController: UIViewController {
         }
     }
     
+    func loadImage(_ url: String?) -> UIImage {
+        let data = NSData(contentsOf: NSURL(string: url!)! as URL)
+        var image: UIImage?
+        if (data != nil){
+            image = UIImage(data: data! as Data)
+        }
+        return image!
+    }
+    
     @objc
     private func buttonTapAction(_ sender: UIButton) {
         switch sender {
@@ -89,35 +108,91 @@ class StoreViewController: UIViewController {
 
 extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
     
+//    func enterBookmark() {
+//        <#code#>
+//    }
+//
+//    func deleteBookmark() {
+//        <#code#>
+//    }
+    
+    
+    func numberOfSections(in _: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoppingmallButton.isSelected ? 5 : 2
+        if shoppingmallButton.isSelected {
+            switch section {
+            case 0:
+                return 5
+            case 1:
+                return 0
+            default:
+                return 0
+            }
+        } else {
+            switch section {
+            case 0:
+                return 0
+            case 1:
+                return 2
+            default:
+                return 0
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoreRankingCell", for: indexPath) as? StoreRankingCell else { return UITableViewCell()
+        switch indexPath.section {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoreRankingCell", for: indexPath) as? StoreRankingCell else { return UITableViewCell()}
+            
+            cell.rankingNumLabel.text = "\(indexPath.row + 1)"
+            
+            if smStoreNameList.count != 0 {
+                DispatchQueue.main.async {
+                    cell.storeImageView.image = self.loadImage(self.smUrlImage[indexPath.row])
+                    cell.storeNameLabel.text = self.smStoreNameList[indexPath.row]
+                    cell.storeCategoryLabel.text = self.smStyleList[indexPath.row]
+                    cell.maxCouponLabel.text = "최대 \(self.smMaxCouponPriceList[indexPath.row])원 쿠폰"
+                    cell.bookmarkNumLabel.text = "\(self.smLikeNumList[indexPath.row])"
+                }
+            } else {
+                cell.storeImageView.image = nil
+                cell.storeNameLabel.text = ""
+                cell.storeCategoryLabel.text = ""
+                cell.maxCouponLabel.text = ""
+                cell.bookmarkNumLabel.text = ""
+            }
+            
+            return cell
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "BrandRankingCell", for: indexPath) as? BrandRankingCell else { return UITableViewCell() }
+            
+            cell.brandRankingNumLabel.text = "\(indexPath.row + 1)"
+            
+            if brandStoreNameList.count != 0 {
+                DispatchQueue.main.async {
+                    cell.brandImageView.image = self.loadImage(self.brandUrlImage[indexPath.row])
+                    cell.brandNameLabel.text = self.brandStoreNameList[indexPath.row]
+                    cell.brandCategoryLabel.text = self.brandCategoryList[indexPath.row]
+                    cell.brandMaxCouponLabel.text = "최대 \(self.brandMaxCouponPriceList[indexPath.row])원 쿠폰"
+                    cell.bookmarkNumLabel.text = "\(self.brandLikeNumList[indexPath.row])"
+                }
+            } else {
+                cell.brandImageView.image = nil
+                cell.brandNameLabel.text = ""
+                cell.brandCategoryLabel.text = ""
+                cell.brandMaxCouponLabel.text = ""
+                cell.bookmarkNumLabel.text = ""
+            }
+            return cell
+        default:
+            return UITableViewCell()
         }
-        cell.rankingNumLabel.text = "\(indexPath.row + 1)"
-        cell.storeImageView.image = UIImage(named: "66girls")
-        
-        if smStoreNameList.count != 0, shoppingmallButton.isSelected {
-            cell.storeNameLabel.text = smStoreNameList[indexPath.row]
-            cell.storeCategoryLabel.text = smStyleList[indexPath.row]
-            cell.maxCouponLabel.text = "최대 \(smMaxCouponPriceList[indexPath.row])원 쿠폰"
-            cell.bookmarkNumLabel.text = "\(smLikeNumList[indexPath.row])"
-        } else if brandStoreNameList.count != 0, brandButton.isSelected {
-            cell.storeNameLabel.text = brandStoreNameList[indexPath.row]
-            cell.storeCategoryLabel.text = brandCategoryList[indexPath.row]
-            cell.maxCouponLabel.text = "최대 \(brandMaxCouponPriceList[indexPath.row])원 쿠폰"
-            cell.bookmarkNumLabel.text = "\(brandLikeNumList[indexPath.row])"
-        } else {
-            cell.storeNameLabel.text = "육육걸즈"
-            cell.storeCategoryLabel.text = "심플베이직 러블리"
-            cell.maxCouponLabel.text = "최대 5,000원 쿠폰"
-            cell.bookmarkNumLabel.text = "1"
-        }
-        
-        return cell
+    
     }
     
 }
@@ -125,6 +200,7 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
 extension StoreViewController {
     func didShoppingMallAPISuccess(infoList: [StoreRankingInfo]) {
         for i in 0..<5 {
+            smUrlImage.append(infoList[i].storeImg)
             smStoreNameList.append(infoList[i].storeName)
             
             if infoList[i].style.count == 2 {
@@ -146,6 +222,7 @@ extension StoreViewController {
     
     func didBrandAPISuccess(infoList: [BrandRankingInfo]) {
         for i in 0..<2 {
+            brandUrlImage.append(infoList[i].storeImg)
             brandStoreNameList.append(infoList[i].storeName)
             brandCategoryList.append(infoList[i].storeCategoryName)
             brandLikeNumList.append(infoList[i].likeNum)
