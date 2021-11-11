@@ -68,6 +68,7 @@
 		2DD3CA5A273C244A0040205D /* StoreRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA59273C244A0040205D /* StoreRankingCell.swift */; };
 		2DD3CA5E273C32DF0040205D /* StoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA5D273C32DF0040205D /* StoreEntity.swift */; };
 		2DD3CA61273C34150040205D /* StoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA60273C34150040205D /* StoreRequest.swift */; };
+		2DD3CA64273CF1D40040205D /* BrandEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA63273CF1D40040205D /* BrandEntity.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -160,6 +161,7 @@
 		2DD3CA59273C244A0040205D /* StoreRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRankingCell.swift; sourceTree = "<group>"; };
 		2DD3CA5D273C32DF0040205D /* StoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntity.swift; sourceTree = "<group>"; };
 		2DD3CA60273C34150040205D /* StoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRequest.swift; sourceTree = "<group>"; };
+		2DD3CA63273CF1D40040205D /* BrandEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandEntity.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				2DD3CA5D273C32DF0040205D /* StoreEntity.swift */,
+				2DD3CA63273CF1D40040205D /* BrandEntity.swift */,
 				2DD3CA60273C34150040205D /* StoreRequest.swift */,
 			);
 			path = StoreAPI;
@@ -659,6 +662,7 @@
 				2D4C9E70272D41D60069BB3B /* String.swift in Sources */,
 				2D4C9E79272D41F80069BB3B /* UIButton.swift in Sources */,
 				2DC6E558273970F50051BD3C /* UseCouponCell.swift in Sources */,
+				2DD3CA64273CF1D40040205D /* BrandEntity.swift in Sources */,
 				2D6CA9E7273ADBB400B0F45B /* CategoryCollectionViewCell.swift in Sources */,
 				2DD3CA47273BFFA70040205D /* ReviewTabViewController.swift in Sources */,
 				2DD3CA3B273BFC6E0040205D /* ReviewViewController.swift in Sources */,
