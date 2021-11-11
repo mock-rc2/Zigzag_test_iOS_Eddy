@@ -26,7 +26,9 @@ class MyPageViewController: UIViewController {
             nvc.modalPresentationStyle = .fullScreen
             present(nvc, animated: true, completion: nil)
         } else{
-            
+            let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "SettingUserInfoViewController") as! SettingUserInfoViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

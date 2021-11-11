@@ -11,7 +11,7 @@ struct AuthEntity: Decodable{
     var isSuccess: Bool
     var code: Int
     var message: String
-    var result: UserToken
+    var result: UserToken?
 }
 
 struct UserToken: Decodable {

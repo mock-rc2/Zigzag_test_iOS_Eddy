@@ -74,6 +74,9 @@
 		2DD3CA76273D27940040205D /* BrandRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA75273D27940040205D /* BrandRankingCell.swift */; };
 		2DD3CA79273D4FB00040205D /* UserInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA78273D4FAF0040205D /* UserInfoEntity.swift */; };
 		2DD3CA7C273D65380040205D /* BookMarkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA7B273D65370040205D /* BookMarkEntity.swift */; };
+		2DD3CA9C273D86FF0040205D /* MyPageUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA9B273D86FF0040205D /* MyPageUserCell.swift */; };
+		2DD3CA9F273D87B90040205D /* SettingUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CA9E273D87B90040205D /* SettingUserInfoViewController.swift */; };
+		2DD3CAA2273D884E0040205D /* SettingUserInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3CAA1273D884E0040205D /* SettingUserInfoHeaderView.swift */; };
 		2DED64A1272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */; };
 		2DED64A5272FD82C0050DCF7 /* TermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */; };
 		2DED64A9273012E10050DCF7 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */; };
@@ -172,6 +175,9 @@
 		2DD3CA75273D27940040205D /* BrandRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRankingCell.swift; sourceTree = "<group>"; };
 		2DD3CA78273D4FAF0040205D /* UserInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoEntity.swift; sourceTree = "<group>"; };
 		2DD3CA7B273D65370040205D /* BookMarkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkEntity.swift; sourceTree = "<group>"; };
+		2DD3CA9B273D86FF0040205D /* MyPageUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageUserCell.swift; sourceTree = "<group>"; };
+		2DD3CA9E273D87B90040205D /* SettingUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUserInfoViewController.swift; sourceTree = "<group>"; };
+		2DD3CAA1273D884E0040205D /* SettingUserInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUserInfoHeaderView.swift; sourceTree = "<group>"; };
 		2DED64A0272FCF3A0050DCF7 /* SignUpBottonSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBottonSheetViewController.swift; sourceTree = "<group>"; };
 		2DED64A4272FD82C0050DCF7 /* TermOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfServiceViewController.swift; sourceTree = "<group>"; };
 		2DED64A8273012E10050DCF7 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
@@ -368,9 +374,12 @@
 				2DD3CA35273BFBD50040205D /* ExtraVC */,
 				2DFD1EFC272EDFBC00E6EDD4 /* Auth */,
 				2D4C9EA9272D7FD30069BB3B /* MyPageStoryboard.storyboard */,
+				2DD3CA9E273D87B90040205D /* SettingUserInfoViewController.swift */,
+				2DD3CA9B273D86FF0040205D /* MyPageUserCell.swift */,
 				2DD3CA29273BAD310040205D /* MyPageCell.swift */,
 				2D4C9EB8272D80EA0069BB3B /* MyPageViewController.swift */,
 				2DD3CA26273BA85D0040205D /* MyPageHeaderView.swift */,
+				2DD3CAA1273D884E0040205D /* SettingUserInfoHeaderView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -652,6 +661,7 @@
 				2D4C9E4C272D18520069BB3B /* AppDelegate.swift in Sources */,
 				2DED64D027313FCD0050DCF7 /* SaleViewController.swift in Sources */,
 				2DD3CA5A273C244A0040205D /* StoreRankingCell.swift in Sources */,
+				2DD3CA9C273D86FF0040205D /* MyPageUserCell.swift in Sources */,
 				2DD3CA5E273C32DF0040205D /* StoreEntity.swift in Sources */,
 				2DFD1EF5272EBEB400E6EDD4 /* LoginViewController.swift in Sources */,
 				2DD3CA37273BFC400040205D /* OrderViewController.swift in Sources */,
@@ -685,6 +695,7 @@
 				2D6CA9E7273ADBB400B0F45B /* CategoryCollectionViewCell.swift in Sources */,
 				2DD3CA47273BFFA70040205D /* ReviewTabViewController.swift in Sources */,
 				2DD3CA3B273BFC6E0040205D /* ReviewViewController.swift in Sources */,
+				2DD3CA9F273D87B90040205D /* SettingUserInfoViewController.swift in Sources */,
 				2DED65012733B9190050DCF7 /* DetailWebViewController.swift in Sources */,
 				2D4C9E76272D41ED0069BB3B /* UIFont.swift in Sources */,
 				2DD3CA4D273C00300040205D /* ExpireCouponViewController.swift in Sources */,
@@ -704,6 +715,7 @@
 				2DD3CA2A273BAD310040205D /* MyPageCell.swift in Sources */,
 				2D4C9E4E272D18520069BB3B /* SceneDelegate.swift in Sources */,
 				2D4C9EB3272D80D70069BB3B /* CollectViewController.swift in Sources */,
+				2DD3CAA2273D884E0040205D /* SettingUserInfoHeaderView.swift in Sources */,
 				2D4C9E63272D1CD30069BB3B /* Constant.swift in Sources */,
 				2DC6E555273970D20051BD3C /* PurchaseItemCell.swift in Sources */,
 				2DD3CA3E273BFC7D0040205D /* CouponViewController.swift in Sources */,

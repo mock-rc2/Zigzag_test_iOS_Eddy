@@ -131,7 +131,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoreRankingCell" rowHeight="80" id="gJl-ru-FiP" customClass="StoreRankingCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoreRankingCell" rowHeight="80" id="gJl-ru-FiP" customClass="StoreRankingCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="118" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJl-ru-FiP" id="3zr-Ps-KWS">
@@ -213,7 +213,7 @@
                                             <outlet property="storeNameLabel" destination="d6I-f6-Yrx" id="Oa4-Af-9U5"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BrandRankingCell" rowHeight="80" id="G0W-8g-evH" customClass="BrandRankingCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BrandRankingCell" rowHeight="80" id="G0W-8g-evH" customClass="BrandRankingCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="198" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G0W-8g-evH" id="yAZ-ll-oSp">
@@ -362,7 +362,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookMarkCell" rowHeight="80" id="iDs-kg-Jbw" customClass="BookMarkCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookMarkCell" rowHeight="80" id="iDs-kg-Jbw" customClass="BookMarkCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iDs-kg-Jbw" id="W6E-UI-Oap">

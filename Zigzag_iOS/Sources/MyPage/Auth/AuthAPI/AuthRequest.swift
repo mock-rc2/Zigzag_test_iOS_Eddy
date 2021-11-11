@@ -26,13 +26,12 @@ class AuthRequest {
                 switch response.result {
                 case .success(let response):
                     if response.isSuccess {
-                        AuthData.jwtToken = response.result.jwt
-                        AuthData.userIdx = response.result.userIdx
+                        AuthData.jwtToken = response.result?.jwt
+                        AuthData.userIdx = response.result?.userIdx
                         viewController.didSignUpSuccess()
                     } else {
                         viewController.didSignUpFailure(message: response.message)
                     }
-                    print(response)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
@@ -57,17 +56,50 @@ class AuthRequest {
                 switch response.result {
                 case .success(let response):
                     if response.isSuccess {
-                        AuthData.jwtToken = response.result.jwt
-                        AuthData.userIdx = response.result.userIdx
+                        AuthData.jwtToken = response.result?.jwt
+                        AuthData.userIdx = response.result?.userIdx
                         viewController.didLoginSuccess()
                     } else {
                         viewController.didLoginFailure(message: response.message)
                     }
-                    print(response)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
 
+        }
+    }
+    
+    func withDrawData(viewController: SettingUserInfoViewController) {
+        if let userIdx = AuthData.userIdx, let jwt = AuthData.jwtToken {
+            let url = "https://rczigzag.shop/app/users/\(userIdx)/delection"
+            let params: Parameters = [
+                "userIdx": "\(userIdx)"
+            ]
+            
+            let headers: HTTPHeaders = [
+                "X-ACCESS-TOKEN": "\(jwt)"
+            ]
+            
+            AF.request(url,
+                       method: .patch,
+                       parameters: params,
+                       encoding: JSONEncoding.default,
+                       headers: headers)
+                .responseDecodable(of: WithDrawEntity.self) { response in
+                
+                    switch response.result {
+                    case .success(let response):
+                        if response.isSuccess {
+                            viewController.successWithDraw()
+                        } else {
+                            viewController.faliureWithDraw()
+                        }
+                        print(response)
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
+
+            }
         }
     }
 }

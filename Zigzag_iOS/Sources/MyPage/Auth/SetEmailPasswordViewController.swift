@@ -96,7 +96,7 @@ extension SetEmailPasswordViewController {
     
     func didSignUpSuccess() {
         AuthData.isLogin = true
-        
+        AuthData.email = emailTextField.text
         let vc = UIStoryboard(name: "MyPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "CompleteVC") as! CompleteViewController
         self.navigationController?.pushViewController(vc, animated: true)
 

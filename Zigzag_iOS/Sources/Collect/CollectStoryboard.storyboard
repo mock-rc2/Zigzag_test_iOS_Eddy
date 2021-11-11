@@ -91,7 +91,7 @@
                                             <outlet property="categoryCollectionView" destination="riv-CC-N2y" id="E7C-YZ-AZ3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BigBannerTVC" rowHeight="300" id="tZ1-eA-SGI" customClass="BigBannerTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BigBannerTVC" rowHeight="300" id="tZ1-eA-SGI" customClass="BigBannerTableViewCell" customModule="Zigzag_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="308" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tZ1-eA-SGI" id="sSY-jf-RIc">

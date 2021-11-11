@@ -11,7 +11,7 @@ struct UserInfoEntity: Decodable{
     var isSuccess: Bool
     var code: Int
     var message: String
-    var result: UserInfo
+    var result: UserInfo?
 }
 
 struct UserInfo: Decodable {
@@ -23,4 +23,11 @@ struct UserInfo: Decodable {
     var reviewCount: String
     var couponCount: String
     var point:  String
+}
+
+struct WithDrawEntity: Decodable {
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: String
 }

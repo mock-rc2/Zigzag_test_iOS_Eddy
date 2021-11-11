@@ -770,6 +770,114 @@
             </objects>
             <point key="canvasLocation" x="3190" y="849"/>
         </scene>
+        <!--Setting User Info View Controller-->
+        <scene sceneID="AOd-9Y-OUM">
+            <objects>
+                <viewController storyboardIdentifier="SettingUserInfoViewController" id="aEq-Ua-0ep" customClass="SettingUserInfoViewController" customModule="Zigzag_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJ3-7y-yz0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F1h-H1-gbS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="dZu-7Q-N6V">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="043-zi-V0l">
+                                            <rect key="frame" x="182" y="40" width="50" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eddy@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-Gw-adf">
+                                            <rect key="frame" x="148" y="68" width="118" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="bXy-Gw-adf" firstAttribute="centerX" secondItem="dZu-7Q-N6V" secondAttribute="centerX" id="JUF-T2-48S"/>
+                                        <constraint firstItem="043-zi-V0l" firstAttribute="top" secondItem="dZu-7Q-N6V" secondAttribute="top" constant="40" id="fOB-z1-CHQ"/>
+                                        <constraint firstItem="043-zi-V0l" firstAttribute="centerX" secondItem="dZu-7Q-N6V" secondAttribute="centerX" id="iYp-qc-lFr"/>
+                                        <constraint firstItem="bXy-Gw-adf" firstAttribute="top" secondItem="043-zi-V0l" secondAttribute="bottom" constant="5" id="qhS-ey-I62"/>
+                                    </constraints>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="b8Z-7P-Qd1">
+                                    <rect key="frame" x="0.0" y="236" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-CB-rnP">
+                                            <rect key="frame" x="20" y="7.5" width="49" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="회원탈퇴">
+                                                <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="withDrawButtonTap:" destination="aEq-Ua-0ep" eventType="touchUpInside" id="Y9Q-W1-3aS"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ECR-CB-rnP" firstAttribute="centerY" secondItem="b8Z-7P-Qd1" secondAttribute="centerY" id="MLM-ZC-Seb"/>
+                                        <constraint firstItem="ECR-CB-rnP" firstAttribute="leading" secondItem="b8Z-7P-Qd1" secondAttribute="leading" constant="20" id="ldA-rm-PHK"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPageUserCell" rowHeight="60" id="ybl-sk-IIO" customClass="MyPageUserCell" customModule="Zigzag_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ybl-sk-IIO" id="qbT-pF-iwc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원정보 수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-Wz-Iei">
+                                                    <rect key="frame" x="20" y="20.5" width="87.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n4j-Wz-Iei" firstAttribute="leading" secondItem="qbT-pF-iwc" secondAttribute="leading" constant="20" id="YLQ-SC-RbP"/>
+                                                <constraint firstItem="n4j-Wz-Iei" firstAttribute="centerY" secondItem="qbT-pF-iwc" secondAttribute="centerY" id="i7L-8x-Qrh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="n4j-Wz-Iei" id="YyF-po-p6h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aEq-Ua-0ep" id="u0W-V7-dcd"/>
+                                    <outlet property="delegate" destination="aEq-Ua-0ep" id="YGa-lk-3m6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VKg-jK-n2B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F1h-H1-gbS" firstAttribute="leading" secondItem="VKg-jK-n2B" secondAttribute="leading" id="352-zw-iLK"/>
+                            <constraint firstItem="VKg-jK-n2B" firstAttribute="bottom" secondItem="F1h-H1-gbS" secondAttribute="bottom" id="C71-hI-VNG"/>
+                            <constraint firstItem="VKg-jK-n2B" firstAttribute="trailing" secondItem="F1h-H1-gbS" secondAttribute="trailing" id="tYP-eX-xPO"/>
+                            <constraint firstItem="F1h-H1-gbS" firstAttribute="top" secondItem="VKg-jK-n2B" secondAttribute="top" id="tsV-3j-kUL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userEmailLabel" destination="bXy-Gw-adf" id="hjP-E2-W1D"/>
+                        <outlet property="userInfoTableView" destination="F1h-H1-gbS" id="jn9-qd-WMx"/>
+                        <outlet property="userNameLabel" destination="043-zi-V0l" id="s76-D0-1Lm"/>
+                        <outlet property="withdrawButton" destination="ECR-CB-rnP" id="Qgz-zu-qlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvE-3O-1ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4037.68115942029" y="1720.9821428571429"/>
+        </scene>
         <!--Term Of Service View Controller-->
         <scene sceneID="4Mj-ee-j46">
             <objects>
