@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     static var recommendStoreNameList: [String] = []
     static var recommendProductNameList: [String] = []
     static var recommendPriceList: [Int] = []
+    static var recommendUrlImage: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,6 +123,7 @@ extension HomeViewController {
     
     func didRecommendAPISuccess(infoList: [RecommendItemInfo]) {
         for i in 0..<3 {
+            HomeViewController.recommendUrlImage.append( infoList[i].productImg[0])
             HomeViewController.recommendStoreNameList.append(infoList[i].storeName)
             HomeViewController.recommendProductNameList.append(infoList[i].productName)
             HomeViewController.recommendPriceList.append(infoList[i].price)

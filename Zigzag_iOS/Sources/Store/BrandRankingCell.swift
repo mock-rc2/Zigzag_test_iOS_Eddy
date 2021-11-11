@@ -17,6 +17,8 @@ class BrandRankingCell: UITableViewCell {
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var bookmarkNumLabel: UILabel!
     
+    var bookmarkDelegate: BookMarkButtonProtocol?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setButtonTarget()
@@ -44,8 +46,10 @@ class BrandRankingCell: UITableViewCell {
         case bookmarkButton:
             if !sender.isSelected {
                 sender.isSelected = true
+                self.bookmarkDelegate?.enterBookmark(index: sender.tag)
             } else {
                 sender.isSelected = false
+                self.bookmarkDelegate?.dismissBookmark(index: sender.tag)
             }
         default:
             return

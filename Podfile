@@ -9,6 +9,7 @@ target 'Zigzag_iOS' do
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityIndicator'
   pod 'SnapKit'
+  pod 'SwiftyJSON'
   pod 'PanModal'
   pod 'Tabman', '~> 2.11'
 

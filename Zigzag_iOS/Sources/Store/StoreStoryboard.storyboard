@@ -412,6 +412,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bookmarkTableView" destination="tUa-fm-pg1" id="NMJ-0S-eC0"/>
                         <outlet property="numOfCellLabel" destination="PnI-U3-d2M" id="iK8-7j-iWB"/>
                     </connections>
                 </viewController>

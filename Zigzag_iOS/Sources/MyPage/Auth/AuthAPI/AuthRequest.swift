@@ -26,7 +26,8 @@ class AuthRequest {
                 switch response.result {
                 case .success(let response):
                     if response.isSuccess {
-                        AuthData.jwtToken = response.result?.jwt
+                        AuthData.jwtToken = response.result.jwt
+                        AuthData.userIdx = response.result.userIdx
                         viewController.didSignUpSuccess()
                     } else {
                         viewController.didSignUpFailure(message: response.message)
@@ -56,7 +57,8 @@ class AuthRequest {
                 switch response.result {
                 case .success(let response):
                     if response.isSuccess {
-                        AuthData.jwtToken = response.result?.jwt
+                        AuthData.jwtToken = response.result.jwt
+                        AuthData.userIdx = response.result.userIdx
                         viewController.didLoginSuccess()
                     } else {
                         viewController.didLoginFailure(message: response.message)

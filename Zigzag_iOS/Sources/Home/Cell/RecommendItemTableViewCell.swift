@@ -22,6 +22,15 @@ class RecommendItemTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func loadImage(_ url: String?) -> UIImage {
+        let data = NSData(contentsOf: NSURL(string: url!)! as URL)
+        var image: UIImage?
+        if (data != nil){
+            image = UIImage(data: data! as Data)
+        }
+        return image!
+    }
 
 }
 
@@ -38,11 +47,13 @@ extension RecommendItemTableViewCell: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendItemCVC", for: indexPath) as? RecommendItemCollectionViewCell else { return UICollectionViewCell() }
         if HomeViewController.recommendPriceList.count != 0 {
-            cell.itemImageView.image = UIImage(named: "zigzagsampleitem")
-            cell.itemTitleLabel.text =
-                HomeViewController.recommendStoreNameList[indexPath.item]
-            cell.itemDescriptionLabel.text =         HomeViewController.recommendProductNameList[indexPath.item]
-            cell.itemPriceLabel.text = "\(HomeViewController.recommendPriceList[indexPath.item])".insertComma
+            DispatchQueue.main.async {
+                cell.itemImageView.image = self.loadImage(HomeViewController.recommendUrlImage[indexPath.item])
+                cell.itemTitleLabel.text =
+                    HomeViewController.recommendStoreNameList[indexPath.item]
+                cell.itemDescriptionLabel.text =         HomeViewController.recommendProductNameList[indexPath.item]
+                cell.itemPriceLabel.text = "\(HomeViewController.recommendPriceList[indexPath.item])".insertComma
+            }
         } else {
             cell.itemImageView.image = UIImage(named: "zigzagsampleitem")
             cell.itemTitleLabel.text = "리리앤코"

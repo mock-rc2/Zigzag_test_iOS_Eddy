@@ -9,8 +9,8 @@ import UIKit
 import SnapKit
 
 protocol BookMarkButtonProtocol {
-    func enterBookmark()
-    func deleteBookmark()
+    func enterBookmark(index: Int)
+    func dismissBookmark(index: Int)
 }
 
 class StoreViewController: UIViewController {
@@ -45,6 +45,7 @@ class StoreViewController: UIViewController {
         setButtonTarget()
         StoreRequest().getShoppingMallRankingData(viewController: self)
         StoreRequest().getBrandRankingData(viewController: self)
+        
     }
     
     func setButtonUI() {
@@ -106,15 +107,15 @@ class StoreViewController: UIViewController {
     
 }
 
-extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
+extension StoreViewController: UITableViewDelegate, UITableViewDataSource, BookMarkButtonProtocol {
     
-//    func enterBookmark() {
-//        <#code#>
-//    }
-//
-//    func deleteBookmark() {
-//        <#code#>
-//    }
+    func enterBookmark(index: Int) {
+        StoreRequest().enrollBookMark(viewController: self, index: index)
+    }
+    
+    func dismissBookmark(index: Int) {
+        StoreRequest().dismissBookMark(viewController: self, index: index)
+    }
     
     
     func numberOfSections(in _: UITableView) -> Int {
@@ -150,6 +151,8 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoreRankingCell", for: indexPath) as? StoreRankingCell else { return UITableViewCell()}
             
             cell.rankingNumLabel.text = "\(indexPath.row + 1)"
+            cell.bookmarkDelegate = self
+            cell.bookmarkButton.tag = indexPath.row + 1
             
             if smStoreNameList.count != 0 {
                 DispatchQueue.main.async {
@@ -172,6 +175,12 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BrandRankingCell", for: indexPath) as? BrandRankingCell else { return UITableViewCell() }
             
             cell.brandRankingNumLabel.text = "\(indexPath.row + 1)"
+            cell.bookmarkDelegate = self
+            if indexPath.row == 1 {
+                cell.bookmarkButton.tag = indexPath.row + 7
+            } else {
+                cell.bookmarkButton.tag = indexPath.row + 6
+            }
             
             if brandStoreNameList.count != 0 {
                 DispatchQueue.main.async {
@@ -233,5 +242,21 @@ extension StoreViewController {
     
     func didBrandAPIFailure(message: String) {
         presentBottomAlert(message: message)
+    }
+    
+    func enrollBookMarkAPISuccess() {
+        presentBottomAlert(message: "즐겨찾기 등록에 성공하였습니다")
+    }
+    
+    func enrollBookMarkAPIFailure() {
+        presentBottomAlert(message: "즐겨찾기 등록에 실패하였습니다")
+    }
+    
+    func dismissBookMarkAPISuccess() {
+        presentBottomAlert(message: "즐겨찾기에서 삭제되었습니다")
+    }
+    
+    func dismissBookMarkAPIFailure() {
+        presentBottomAlert(message: "즐겨찾기 삭제에 실패하였습니다")
     }
 }

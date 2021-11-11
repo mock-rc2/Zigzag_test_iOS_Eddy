@@ -17,6 +17,7 @@ struct RecommendEntity: Decodable{
 struct RecommendItemInfo: Decodable {
     var productIdx: Int
     var storeName: String
+    var productImg: [String]
     var productName: String
     var price: Int
     var discountRate: Int
